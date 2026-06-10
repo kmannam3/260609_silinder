@@ -48,16 +48,16 @@
           <span class="label">등록된 제품</span>
           <span class="icon-wrap" id="kpi-icon-3"></span>
         </div>
-        <div class="kpi-value">4</div>
+        <div class="kpi-value" id="kpi-products-count">4</div>
         <div class="kpi-change" style="color: var(--adm-text-muted);"><span>변경 없음</span></div>
       </div>
 
       <div class="kpi-card">
         <div class="kpi-head">
-          <span class="label">활성 인증서</span>
+          <span class="label">출원 인증서</span>
           <span class="icon-wrap" id="kpi-icon-4"></span>
         </div>
-        <div class="kpi-value">9</div>
+        <div class="kpi-value" id="kpi-certifications-count">9</div>
         <div class="kpi-change" style="color: var(--adm-text-muted);"><span>모두 유효</span></div>
       </div>
 
@@ -134,10 +134,18 @@
   </main>
 </div>
 
+<script src="data.js"></script>
 <script src="admin.js"></script>
 <script>
   // 사이드바 + 헤더 렌더
   HPAdmin.renderLayout('dashboard', 'Dashboard');
+
+  // data.js 기반 KPI 값 채우기
+  document.getElementById('kpi-products-count').textContent = siteData.products.length;
+  document.getElementById('kpi-certifications-count').textContent =
+    siteData.certifications.iso.length +
+    siteData.certifications.safety.length +
+    siteData.certifications.industry.length;
 
   // KPI 카드 아이콘 채우기
   document.getElementById('kpi-icon-1').innerHTML = HPAdmin.icons.mail;

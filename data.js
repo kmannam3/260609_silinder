@@ -107,7 +107,7 @@ window.siteData = {
     newsletter: {
       title:       { KR: "뉴스레터 구독", EN: "", CN: "" },
       description: { KR: "최신 기술 백서 소식을 가장 먼저 받아보세요.", EN: "", CN: "" },
-      placeholder: { KR: "이메일 주소", EN: "", CN: "" },
+      placeholder: { KR: "이메일 주소", EN: "Email Address", CN: "电子邮箱" },
       successMessage: { KR: "구독 신청이 접수되었습니다.", EN: "", CN: "" }
     }
   },
@@ -117,8 +117,8 @@ window.siteData = {
     buttons: {
       productsLearnMore: { KR: "제품 알아보기",     EN: "", CN: "" },
       techSpecs:         { KR: "기술 사양 확인",    EN: "", CN: "" },
-      catalogDownload:   { KR: "카탈로그 다운로드", EN: "", CN: "" },
-      techInquiry:       { KR: "기술 문의",         EN: "", CN: "" },
+      catalogDownload:   { KR: "카탈로그 다운로드", EN: "Download Catalog", CN: "下载目录" },
+      techInquiry:       { KR: "기술 문의",         EN: "Technical Inquiry", CN: "技术咨询" },
       requestData:       { KR: "기술 데이터 요청",  EN: "", CN: "" },
       requestDocs:       { KR: "자료 요청하기",     EN: "", CN: "" },
       downloadQM:        { KR: "품질 매뉴얼 다운로드 (PDF)", EN: "", CN: "" },
@@ -371,37 +371,37 @@ window.siteData = {
     /* ========== PRODUCTS ========== */
     products: {
       hero: {
-        title:    { KR: "정밀 엔지니어링.<br/>고성능 솔루션.", EN: "", CN: "" },
-        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "", CN: "" }
+        title:    { KR: "정밀 엔지니어링.<br/>고성능 솔루션.", EN: "Precision Engineering.<br/>High-Performance Solutions.", CN: "精密工程。<br/>高性能解决方案。" },
+        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "Explore our premium hydraulic cylinder lineup engineered for extreme durability and mission-critical reliability in industrial sites worldwide.", CN: "了解适用于全球工业现场、具备极限耐久性和关键任务可靠性的高品质液压缸产品线。" }
       },
       catalogIntro: {
-        title: { KR: "유압 시스템 카탈로그", EN: "", CN: "" },
-        body:  { KR: "심해 탐사부터 중장비 건설 인프라까지, 당사의 컴포넌트는 가장 가혹한 환경에서도 완벽한 성능을 발휘하도록 설계되었습니다.", EN: "", CN: "" },
+        title: { KR: "유압 시스템 카탈로그", EN: "Hydraulic System Catalog", CN: "液压系统目录" },
+        body:  { KR: "심해 탐사부터 중장비 건설 인프라까지, 당사의 컴포넌트는 가장 가혹한 환경에서도 완벽한 성능을 발휘하도록 설계되었습니다.", EN: "From deep-sea exploration to heavy construction infrastructure, our components are designed to perform flawlessly in the harshest environments.", CN: "从深海勘探到重型建设基础设施，我们的部件都专为最严苛环境下的稳定性能而设计。" },
         actions: [
-          { label: { KR: "카탈로그 다운로드", EN: "", CN: "" }, href: "#",            style: "btn-primary" },
-          { label: { KR: "기술 문의",         EN: "", CN: "" }, href: "contact.html", style: "btn-outline"  }
+          { label: { KR: "카탈로그 다운로드", EN: "Download Catalog", CN: "下载目录" }, href: "#",            style: "btn-primary" },
+          { label: { KR: "기술 문의",         EN: "Technical Inquiry", CN: "技术咨询" }, href: "contact.html", style: "btn-outline"  }
         ]
       },
       features: [
         {
           icon: "shield",
           title: { KR: "ISO 9001:2015", EN: "", CN: "" },
-          description: { KR: "인증된 제조 공정과 철저한 품질 관리 시스템을 갖추고 있습니다.", EN: "", CN: "" }
+          description: { KR: "인증된 제조 공정과 철저한 품질 관리 시스템을 갖추고 있습니다.", EN: "Certified manufacturing processes and rigorous quality control systems.", CN: "具备认证制造流程和严格的质量管理体系。" }
         },
         {
           icon: "target",
-          title: { KR: "제로 톨러런스", EN: "", CN: "" },
-          description: { KR: "마이크론 단위의 정밀 가공으로 오차 없는 성능을 보장합니다.", EN: "", CN: "" }
+          title: { KR: "제로 톨러런스", EN: "Zero Tolerance", CN: "零容差" },
+          description: { KR: "마이크론 단위의 정밀 가공으로 오차 없는 성능을 보장합니다.", EN: "Micron-level precision machining ensures error-free performance.", CN: "微米级精密加工确保无误差性能。" }
         },
         {
           icon: "globe",
-          title: { KR: "글로벌 물류", EN: "", CN: "" },
-          description: { KR: "전 세계 주요 항만과 산업 허브로 신속한 배송을 지원합니다.", EN: "", CN: "" }
+          title: { KR: "글로벌 물류", EN: "Global Logistics", CN: "全球物流" },
+          description: { KR: "전 세계 주요 항만과 산업 허브로 신속한 배송을 지원합니다.", EN: "Fast delivery to major ports and industrial hubs worldwide.", CN: "快速配送至全球主要港口和工业枢纽。" }
         },
         {
           icon: "support",
-          title: { KR: "24/7 전문가 지원", EN: "", CN: "" },
-          description: { KR: "복잡한 설치와 운용을 위한 상시 엔지니어링 상담 서비스를 제공합니다.", EN: "", CN: "" }
+          title: { KR: "24/7 전문가 지원", EN: "24/7 Expert Support", CN: "24/7专家支持" },
+          description: { KR: "복잡한 설치와 운용을 위한 상시 엔지니어링 상담 서비스를 제공합니다.", EN: "Always-on engineering consultation for complex installation and operation.", CN: "为复杂安装与运行提供全天候工程咨询。" }
         }
       ]
     },
@@ -410,32 +410,32 @@ window.siteData = {
     technology: {
       hero: {
         eyebrow: "ENGINEERING EXCELLENCE",
-        title:    { KR: "유압 제어 기술의 미래를 선도하다", EN: "", CN: "" },
-        subtitle: { KR: "지능형 제조 공정과 엄격한 품질 관리 프로토콜을 통합하여 글로벌 산업 표준을 새롭게 정의합니다.", EN: "", CN: "" }
+        title:    { KR: "유압 제어 기술의 미래를 선도하다", EN: "Leading the Future of Hydraulic Control", CN: "引领液压控制技术的未来" },
+        subtitle: { KR: "지능형 제조 공정과 엄격한 품질 관리 프로토콜을 통합하여 글로벌 산업 표준을 새롭게 정의합니다.", EN: "We redefine global industrial standards by integrating intelligent manufacturing processes with rigorous quality protocols.", CN: "通过融合智能制造流程与严格质量管理规范，重新定义全球工业标准。" }
       },
       process: {
-        title:     { KR: "정밀 제조 공정", EN: "", CN: "" },
-        body:      { KR: "본사의 생산 시설은 자동화된 고정밀 용접 및 5축 CNC 가공 센터를 활용하여 모든 부품의 구조적 무결성과 마이크론 단위의 정밀 공차를 보장합니다.", EN: "", CN: "" },
+        title:     { KR: "정밀 제조 공정", EN: "Precision Manufacturing Process", CN: "精密制造工艺" },
+        body:      { KR: "본사의 생산 시설은 자동화된 고정밀 용접 및 5축 CNC 가공 센터를 활용하여 모든 부품의 구조적 무결성과 마이크론 단위의 정밀 공차를 보장합니다.", EN: "Our facilities use automated high-precision welding and 5-axis CNC centers to ensure structural integrity and micron-level tolerances for every component.", CN: "我们的生产设施采用自动化高精度焊接和五轴CNC加工中心，确保每个部件的结构完整性与微米级公差。" },
         cards: [
           {
             id: "welding",
             imageStyle: "welding",
             iconName: "weld",
-            title:       { KR: "자동 오비탈 용접", EN: "", CN: "" },
+            title:       { KR: "자동 오비탈 용접", EN: "Automated Orbital Welding", CN: "自动轨道焊接" },
             description: { KR: "클린한 텅스텐 용접 프로토콜을 통해 최대 700bar의 극한 압력 사이클에서도 누설 제로 접합부를 보장합니다.", EN: "", CN: "" }
           },
           {
             id: "cnc",
             imageStyle: "cnc",
             iconName: "cube",
-            title:       { KR: "다축 CNC 정밀 가공", EN: "", CN: "" },
+            title:       { KR: "다축 CNC 정밀 가공", EN: "Multi-Axis CNC Precision Machining", CN: "多轴CNC精密加工" },
             description: { KR: "자동 공구 마모 보정 기능을 갖춘 복합 가공기를 통해 배치별 일관된 최상의 정밀도를 유지합니다.", EN: "", CN: "" }
           }
         ]
       },
       quality: {
         eyebrow: "TOTAL QUALITY MANAGEMENT",
-        title:   { KR: "무결점 품질 경영 (Zero-Defect)", EN: "", CN: "" },
+        title:   { KR: "무결점 품질 경영 (Zero-Defect)", EN: "Zero-Defect Quality Management", CN: "零缺陷质量管理" },
         items: [
           {
             id: "cmm",
@@ -471,7 +471,7 @@ window.siteData = {
       },
       innovation: {
         eyebrow: "INNOVATION HUB",
-        title:   { KR: "유체 지능 기술의 고도화", EN: "", CN: "" },
+        title:   { KR: "유체 지능 기술의 고도화", EN: "Advancing Fluid Intelligence", CN: "提升流体智能技术" },
         callout: {
           number: "15%",
           label: { KR: "유압 작동유의 에너지 효율 개선율", EN: "", CN: "" }
@@ -495,8 +495,8 @@ window.siteData = {
         ]
       },
       matrix: {
-        title:    { KR: "기술 사양 매트릭스", EN: "", CN: "" },
-        subtitle: { KR: "표준 제조 역량 및 기술 한계치 수치", EN: "", CN: "" },
+        title:    { KR: "기술 사양 매트릭스", EN: "Technical Specification Matrix", CN: "技术规格矩阵" },
+        subtitle: { KR: "표준 제조 역량 및 기술 한계치 수치", EN: "Standard manufacturing capabilities and technical limits.", CN: "标准制造能力与技术极限值。" },
         headers: [
           { KR: "항목",     EN: "", CN: "" },
           { KR: "가공 범위", EN: "", CN: "" },
@@ -535,21 +535,21 @@ window.siteData = {
     /* ========== CERTIFICATIONS ========== */
     certifications: {
       hero: {
-        eyebrow:  { KR: "품질 경영에 대한 약속", EN: "", CN: "" },
-        title:    { KR: "글로벌 기준의 정밀 공학 우수성", EN: "", CN: "" },
-        subtitle: { KR: "우리의 제조 공정은 국제 공인 기관의 검증을 통해 모든 부품의 신뢰성과 안전성을 보장하며, 엄격한 엔지니어링 표준을 준수합니다.", EN: "", CN: "" }
+        eyebrow:  { KR: "품질 경영에 대한 약속", EN: "Commitment to Quality Management", CN: "对质量管理的承诺" },
+        title:    { KR: "글로벌 기준의 정밀 공학 우수성", EN: "Precision Engineering Excellence by Global Standards", CN: "符合全球标准的精密工程卓越性" },
+        subtitle: { KR: "우리의 제조 공정은 국제 공인 기관의 검증을 통해 모든 부품의 신뢰성과 안전성을 보장하며, 엄격한 엔지니어링 표준을 준수합니다.", EN: "Our manufacturing processes are verified by internationally recognized bodies to ensure reliability, safety, and strict engineering compliance.", CN: "我们的制造流程通过国际认可机构验证，确保所有部件的可靠性、安全性并符合严格工程标准。" }
       },
       sections: {
-        iso:      { heading: { KR: "경영 시스템 인증",   EN: "", CN: "" }, sublabel: { KR: "ISO 표준",          EN: "", CN: "" } },
-        safety:   { heading: { KR: "안전 및 규제 준수",  EN: "", CN: "" }, sublabel: { KR: "글로벌 인증 마크",   EN: "", CN: "" } },
-        industry: { heading: { KR: "산업별 특화 승인",   EN: "", CN: "" }, sublabel: { KR: "특수 분야 전문 인증", EN: "", CN: "" } }
+        iso:      { heading: { KR: "경영 시스템 인증",   EN: "Management System Certifications", CN: "管理体系认证" }, sublabel: { KR: "ISO 표준",          EN: "", CN: "" } },
+        safety:   { heading: { KR: "안전 및 규제 준수",  EN: "Safety and Regulatory Compliance", CN: "安全与法规合规" }, sublabel: { KR: "글로벌 인증 마크",   EN: "", CN: "" } },
+        industry: { heading: { KR: "산업별 특화 승인",   EN: "Industry-Specific Approvals", CN: "行业专项认证" }, sublabel: { KR: "특수 분야 전문 인증", EN: "", CN: "" } }
       },
       cta: {
-        title: { KR: "전체 인증 서류가 필요하십니까?", EN: "", CN: "" },
-        body:  { KR: "등록된 고객께서는 기술 데이터 시트, 시험 성적서 및 공식 인증서 사본이 포함된 데이터 센터를 이용하실 수 있습니다.", EN: "", CN: "" },
+        title: { KR: "전체 인증 서류가 필요하십니까?", EN: "Need the full certification documents?", CN: "需要完整认证文件吗？" },
+        body:  { KR: "등록된 고객께서는 기술 데이터 시트, 시험 성적서 및 공식 인증서 사본이 포함된 데이터 센터를 이용하실 수 있습니다.", EN: "Registered customers can access data sheets, test reports, and official certificate copies through our data center.", CN: "注册客户可通过数据中心获取技术数据表、测试报告和官方认证副本。" },
         actions: [
-          { label: { KR: "자료 요청하기",                EN: "", CN: "" }, href: "contact.html", style: "btn-primary" },
-          { label: { KR: "품질 매뉴얼 다운로드 (PDF)",   EN: "", CN: "" }, href: "#",            style: "btn-outline" }
+          { label: { KR: "자료 요청하기",                EN: "Request Documents", CN: "申请资料" }, href: "contact.html", style: "btn-primary" },
+          { label: { KR: "품질 매뉴얼 다운로드 (PDF)",   EN: "Download Quality Manual (PDF)", CN: "下载质量手册 (PDF)" }, href: "#",            style: "btn-outline" }
         ]
       }
     },
@@ -557,34 +557,34 @@ window.siteData = {
     /* ========== CONTACT ========== */
     contact: {
       intro: {
-        eyebrow:  { KR: "고객지원", EN: "", CN: "" },
-        title:    { KR: "글로벌 엔지니어링 지원 및 기술 문의", EN: "", CN: "" },
-        subtitle: { KR: "전문 유압 엔지니어링 팀이 기술 상담, 제품 사양 확인 및 커스텀 제조 요구 사항에 대해 상세히 안내해 드립니다.", EN: "", CN: "" }
+        eyebrow:  { KR: "고객지원", EN: "Customer Support", CN: "客户支持" },
+        title:    { KR: "글로벌 엔지니어링 지원 및 기술 문의", EN: "Global Engineering Support and Technical Inquiries", CN: "全球工程支持与技术咨询" },
+        subtitle: { KR: "전문 유압 엔지니어링 팀이 기술 상담, 제품 사양 확인 및 커스텀 제조 요구 사항에 대해 상세히 안내해 드립니다.", EN: "Our hydraulic engineering team provides detailed guidance for technical consultation, product specifications, and custom manufacturing requirements.", CN: "专业液压工程团队为技术咨询、产品规格确认和定制制造需求提供详细指导。" }
       },
       form: {
-        title: { KR: "온라인 문의 신청", EN: "", CN: "" },
+        title: { KR: "온라인 문의 신청", EN: "Online Inquiry", CN: "在线咨询" },
         fields: {
-          name:     { label: { KR: "성함",       EN: "", CN: "" }, placeholder: { KR: "홍길동", EN: "", CN: "" }, required: true },
-          company:  { label: { KR: "업체명",     EN: "", CN: "" }, placeholder: { KR: "주식회사 프레시스", EN: "", CN: "" }, required: false },
-          email:    { label: { KR: "이메일 주소", EN: "", CN: "" }, placeholder: { KR: "contact@precision.com", EN: "", CN: "" }, required: true },
-          message:  { label: { KR: "문의 내용",  EN: "", CN: "" }, placeholder: { KR: "기술적 요구 사항이나 상세 문의 내용을 입력해 주세요.", EN: "", CN: "" }, required: true }
+          name:     { label: { KR: "성함",       EN: "Name", CN: "姓名" }, placeholder: { KR: "홍길동", EN: "", CN: "" }, required: true },
+          company:  { label: { KR: "업체명",     EN: "Company", CN: "公司名称" }, placeholder: { KR: "주식회사 프레시스", EN: "", CN: "" }, required: false },
+          email:    { label: { KR: "이메일 주소", EN: "Email Address", CN: "电子邮箱" }, placeholder: { KR: "contact@precision.com", EN: "", CN: "" }, required: true },
+          message:  { label: { KR: "문의 내용",  EN: "Message", CN: "咨询内容" }, placeholder: { KR: "기술적 요구 사항이나 상세 문의 내용을 입력해 주세요.", EN: "", CN: "" }, required: true }
         },
-        consent: { KR: "문의 처리를 위한 개인정보 수집 및 이용에 동의합니다.", EN: "", CN: "" },
-        consentLink: { label: { KR: "개인정보처리방침", EN: "", CN: "" }, href: "#" },
-        submit: { KR: "문의 보내기", EN: "", CN: "" },
-        successMessage: { KR: "문의가 성공적으로 접수되었습니다. 24시간 이내에 답변 드리겠습니다.", EN: "", CN: "" }
+        consent: { KR: "문의 처리를 위한 개인정보 수집 및 이용에 동의합니다.", EN: "I agree to the collection and use of personal information for inquiry processing.", CN: "我同意为处理咨询而收集和使用个人信息。" },
+        consentLink: { label: { KR: "개인정보처리방침", EN: "Privacy Policy", CN: "隐私政策" }, href: "#" },
+        submit: { KR: "문의 보내기", EN: "Send Inquiry", CN: "发送咨询" },
+        successMessage: { KR: "문의가 성공적으로 접수되었습니다. 24시간 이내에 답변 드리겠습니다.", EN: "Your inquiry has been received. We will respond within 24 hours.", CN: "您的咨询已成功提交。我们将在24小时内回复。" }
       },
       hqCard: {
-        title: { KR: "본사 위치", EN: "", CN: "" },
+        title: { KR: "본사 위치", EN: "Headquarters", CN: "总部位置" },
         rows: [
-          { iconName: "pin",   label: { KR: "주소",     EN: "", CN: "" }, valueKey: "company.address.full" },
-          { iconName: "phone", label: { KR: "대표번호", EN: "", CN: "" }, valueKey: "company.phone" },
-          { iconName: "mail",  label: { KR: "이메일",   EN: "", CN: "" }, valueKey: "company.email.engineering" }
+          { iconName: "pin",   label: { KR: "주소",     EN: "Address", CN: "地址" }, valueKey: "company.address.full" },
+          { iconName: "phone", label: { KR: "대표번호", EN: "Main Phone", CN: "代表电话" }, valueKey: "company.phone" },
+          { iconName: "mail",  label: { KR: "이메일",   EN: "Email", CN: "电子邮箱" }, valueKey: "company.email.engineering" }
         ]
       },
       tiles: [
-        { iconName: "doc",  label: { KR: "브로슈어 다운로드", EN: "", CN: "" }, href: "#" },
-        { iconName: "user", label: { KR: "기술 사양서",       EN: "", CN: "" }, href: "#" }
+        { iconName: "doc",  label: { KR: "브로슈어 다운로드", EN: "Download Brochure", CN: "下载宣传册" }, href: "#" },
+        { iconName: "user", label: { KR: "기술 사양서",       EN: "Technical Datasheet", CN: "技术规格书" }, href: "#" }
       ]
     }
   }

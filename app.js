@@ -12,7 +12,8 @@
   var LANG_STORAGE_KEY = 'hp_lang';
   var state = {
     lang: 'KR',                     // 현재 언어 (KR / EN / CN)
-    langReady: false
+    langReady: false,
+    pageId: 'home'
   };
 
   /* ---------- 2. HELPERS ---------- */
@@ -55,14 +56,7 @@
   }
 
   function currentPageId() {
-    var activeNav = document.querySelector('.nav a.active');
-    var id = 'home';
-    if (activeNav && window.siteData) {
-      var href = activeNav.getAttribute('href');
-      var match = window.siteData.nav.find(function (n) { return n.href === href; });
-      if (match) id = match.id;
-    }
-    return id;
+    return state.pageId || 'home';
   }
 
   function persistLanguage(code) {
@@ -154,7 +148,7 @@
       + '<div class="container">'
       +   '<a href="index.html" class="brand">' + esc(d.site.brand) + '</a>'
       +   '<nav class="nav">' + navItems + '</nav>'
-      +   '<div class="lang">' + ICONS.langGlobe + langItems + '</div>'
+      +   '<div class="lang">' + ICONS.langGlobe + langItems + '<span class="sep">/</span><a href="login.html">Admin</a></div>'
       +   '<button class="menu-toggle" aria-label="' + esc(t(d.i18n.menuLabel)) + '">' + ICONS.menu + '</button>'
       + '</div>'
     );
@@ -838,9 +832,10 @@
       console.error('siteData not loaded. Make sure data.js is included before app.js.');
       return;
     }
+    state.pageId = pageId || state.pageId || 'home';
     initLanguage();
-    renderHeader(pageId);
-    var r = pageRenderers[pageId];
+    renderHeader(state.pageId);
+    var r = pageRenderers[state.pageId];
     if (r) r();
     renderFooter();
   }

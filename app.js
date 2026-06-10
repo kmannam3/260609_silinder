@@ -192,7 +192,11 @@
       return '<a href="' + esc(a.href) + '" class="btn ' + esc(a.style) + '">' + esc(t(a.label)) + '</a>';
     }).join('');
     fill('#home-hero', ''
-      + '<div class="hero-bg industrial-1"></div>'
+      + '<div class="hero-bg hero-video-bg">'
+      +   '<video class="hero-video" autoplay muted loop playsinline aria-hidden="true">'
+      +     '<source src="https://res.cloudinary.com/dw5ce5zsh/video/upload/v1780986434/sirinder_sum_ou0eaz.mp4" type="video/mp4">'
+      +   '</video>'
+      + '</div>'
       + '<div class="container">'
       +   '<h1>' + t(p.hero.title) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'

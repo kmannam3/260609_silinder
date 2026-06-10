@@ -99,6 +99,7 @@
       var cls = n.id === activeId ? ' class="active"' : '';
       return '<a href="' + esc(n.href) + '"' + cls + '>' + esc(t(n.label)) + '</a>';
     }).join('');
+    navItems += '<a href="login.html">Admin</a>';
 
     var langItems = d.meta.supportedLanguages.map(function (code, i) {
       var active = code === state.lang ? ' class="active"' : '';

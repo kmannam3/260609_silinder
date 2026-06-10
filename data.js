@@ -204,25 +204,29 @@ window.siteData = {
       id: "construction", style: "t1",
       category: { KR: "건설 분야",   EN: "", CN: "" },
       name:     { KR: "중장비 굴착기 시리즈", EN: "", CN: "" },
-      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "", CN: "" }
+      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "", CN: "" },
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_excavator_series_wfedqm.png"
     },
     {
       id: "automation", style: "t2",
       category: { KR: "공정 자동화", EN: "", CN: "" },
       name:     { KR: "오토메이션 로직", EN: "", CN: "" },
-      description: null
+      description: null,
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_automation_logic_moiwr0.png"
     },
     {
       id: "marine", style: "t3",
       category: { KR: "해양 / 플랜트", EN: "", CN: "" },
       name:     { KR: "코로전 쉴드 내식 시리즈", EN: "", CN: "" },
-      description: null
+      description: null,
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_corrosion_shield_u9d4jh.png"
     },
     {
       id: "smart-sensing", style: "t4",
       category: { KR: "스마트 센싱", EN: "", CN: "" },
       name:     { KR: "IoT 통합 파워 시스템", EN: "", CN: "" },
-      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "", CN: "" }
+      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "", CN: "" },
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_iot_pilot_system_kd8kcc.png"
     }
   ],
 
@@ -323,7 +327,8 @@ window.siteData = {
           { value: "30+",  label: { KR: "업력 (년)",   EN: "", CN: "" } },
           { value: "500+", label: { KR: "보유 특허",   EN: "", CN: "" } },
           { value: "2K+",  label: { KR: "글로벌 고객", EN: "", CN: "" } }
-        ]
+        ],
+        imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/about_hydraulic_precis_ic3qpm.png"
       },
       productGallery: {
         title:    { KR: "주요 제품군", EN: "", CN: "" },

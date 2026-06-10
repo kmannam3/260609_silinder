@@ -218,7 +218,7 @@
       +       '<p>' + esc(t(p.about.body)) + '</p>'
       +       '<div class="stats">' + stats + '</div>'
       +     '</div>'
-      +     '<div class="about-visual"></div>'
+      +     '<div class="about-visual"><img src="' + esc(p.about.imageUrl) + '" alt="" loading="lazy" /></div>'
       +   '</div>'
       + '</div>'
     );
@@ -226,8 +226,10 @@
     // PRODUCT GALLERY (category tiles)
     var tiles = d.productCategories.map(function (c) {
       var desc = c.description ? '<p>' + esc(t(c.description)) + '</p>' : '';
+      var img = c.imageUrl ? '<img src="' + esc(c.imageUrl) + '" alt="" loading="lazy" />' : '';
       return ''
         + '<a href="products.html" class="product-tile ' + esc(c.style) + '">'
+        +   img
         +   '<div>'
         +     '<span class="tile-cat">' + esc(t(c.category)) + '</span>'
         +     '<h3>' + esc(t(c.name)) + '</h3>'

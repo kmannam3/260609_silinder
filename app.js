@@ -9,8 +9,10 @@
   'use strict';
 
   /* ---------- 1. STATE ---------- */
+  var LANG_STORAGE_KEY = 'hp_lang';
   var state = {
-    lang: 'KR'                      // 현재 언어 (KR / EN / CN)
+    lang: 'KR',                     // 현재 언어 (KR / EN / CN)
+    langReady: false
   };
 
   /* ---------- 2. HELPERS ---------- */
@@ -42,6 +44,48 @@
     return String(s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;')
       .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function supportedLanguages() {
+    return (window.siteData && window.siteData.meta && window.siteData.meta.supportedLanguages) || ['KR', 'EN', 'CN'];
+  }
+
+  function isSupportedLanguage(code) {
+    return supportedLanguages().indexOf(code) !== -1;
+  }
+
+  function currentPageId() {
+    var activeNav = document.querySelector('.nav a.active');
+    var id = 'home';
+    if (activeNav && window.siteData) {
+      var href = activeNav.getAttribute('href');
+      var match = window.siteData.nav.find(function (n) { return n.href === href; });
+      if (match) id = match.id;
+    }
+    return id;
+  }
+
+  function persistLanguage(code) {
+    if (window.localStorage) window.localStorage.setItem(LANG_STORAGE_KEY, code);
+  }
+
+  function initLanguage() {
+    if (state.langReady || !window.siteData) return;
+    var fallback = window.siteData.meta.defaultLanguage || 'KR';
+    var saved = window.localStorage ? window.localStorage.getItem(LANG_STORAGE_KEY) : null;
+    state.lang = isSupportedLanguage(saved) ? saved : fallback;
+    if (!isSupportedLanguage(state.lang)) state.lang = 'KR';
+    document.documentElement.lang = state.lang.toLowerCase();
+    state.langReady = true;
+  }
+
+  function setLanguage(code) {
+    if (!isSupportedLanguage(code)) return;
+    state.lang = code;
+    state.langReady = true;
+    document.documentElement.lang = code.toLowerCase();
+    persistLanguage(code);
+    boot(currentPageId());
   }
 
   /** 컨테이너 찾기 (없으면 조용히 무시) */
@@ -133,6 +177,14 @@
         nav.style.gap = '16px';
       }
     });
+
+    var langLinks = document.querySelectorAll('.lang a[data-lang]');
+    langLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        setLanguage(link.getAttribute('data-lang'));
+      });
+    });
   }
 
   /* ---------- 5. FOOTER ---------- */
@@ -193,7 +245,11 @@
       return '<a href="' + esc(a.href) + '" class="btn ' + esc(a.style) + '">' + esc(t(a.label)) + '</a>';
     }).join('');
     fill('#home-hero', ''
-      + '<div class="hero-bg industrial-1"></div>'
+      + '<div class="hero-bg hero-video-bg">'
+      +   '<video class="hero-video" autoplay muted loop playsinline aria-hidden="true">'
+      +     '<source src="https://res.cloudinary.com/dw5ce5zsh/video/upload/v1780986434/sirinder_sum_ou0eaz.mp4" type="video/mp4">'
+      +   '</video>'
+      + '</div>'
       + '<div class="container">'
       +   '<h1>' + t(p.hero.title) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
@@ -214,7 +270,7 @@
       +       '<p>' + esc(t(p.about.body)) + '</p>'
       +       '<div class="stats">' + stats + '</div>'
       +     '</div>'
-      +     '<div class="about-visual"></div>'
+      +     '<div class="about-visual"><img src="' + esc(p.about.imageUrl) + '" alt="" loading="lazy" /></div>'
       +   '</div>'
       + '</div>'
     );
@@ -222,8 +278,10 @@
     // PRODUCT GALLERY (category tiles)
     var tiles = d.productCategories.map(function (c) {
       var desc = c.description ? '<p>' + esc(t(c.description)) + '</p>' : '';
+      var img = c.imageUrl ? '<img src="' + esc(c.imageUrl) + '" alt="" loading="lazy" />' : '';
       return ''
         + '<a href="products.html" class="product-tile ' + esc(c.style) + '">'
+        +   img
         +   '<div>'
         +     '<span class="tile-cat">' + esc(t(c.category)) + '</span>'
         +     '<h3>' + esc(t(c.name)) + '</h3>'
@@ -277,7 +335,10 @@
       +         '<div class="row">' + ICONS.mail + '<span>' + esc(d.company.email.sales) + '</span></div>'
       +       '</div>'
       +     '</div>'
-      +     '<div class="map-stub"><div class="map-pin"></div></div>'
+      +     '<a class="map-stub" href="' + esc(d.company.address.mapUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t(p.location.mapLabel)) + '">'
+      +       '<div class="map-pin"></div>'
+      +       '<span class="map-cta">' + esc(t(p.location.mapLabel)) + '</span>'
+      +     '</a>'
       +   '</div>'
       + '</div>'
     );
@@ -777,6 +838,7 @@
       console.error('siteData not loaded. Make sure data.js is included before app.js.');
       return;
     }
+    initLanguage();
     renderHeader(pageId);
     var r = pageRenderers[pageId];
     if (r) r();
@@ -787,18 +849,7 @@
   window.HP = {
     boot: boot,
     t: t,
-    setLanguage: function (code) {
-      state.lang = code;
-      // re-render currently active page
-      var activeNav = document.querySelector('.nav a.active');
-      var id = 'home';
-      if (activeNav) {
-        var href = activeNav.getAttribute('href');
-        var match = window.siteData.nav.find(function (n) { return n.href === href; });
-        if (match) id = match.id;
-      }
-      boot(id);
-    }
+    setLanguage: setLanguage
   };
 
 })(window);

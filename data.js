@@ -53,7 +53,8 @@ window.siteData = {
     shortName: "HYDRAULIC PRECIS",
     address: {
       short: { KR: "인천광역시 남동구 가산업단지", EN: "", CN: "" },
-      full:  { KR: "대한민국 인천광역시 남동국가산업단지 프레시스로 123", EN: "", CN: "" }
+      full:  { KR: "대한민국 인천광역시 남동국가산업단지 프레시스로 123", EN: "", CN: "" },
+      mapUrl: "https://map.naver.com/p/search/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%82%A8%EB%8F%99%EA%B5%AC%20%EA%B0%80%EC%82%B0%EC%97%85%EB%8B%A8%EC%A7%80"
     },
     phone: "032-810-5500",
     fax: "",
@@ -202,27 +203,31 @@ window.siteData = {
   productCategories: [
     {
       id: "construction", style: "t1",
-      category: { KR: "건설 분야",   EN: "", CN: "" },
-      name:     { KR: "중장비 굴착기 시리즈", EN: "", CN: "" },
-      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "", CN: "" }
+      category: { KR: "건설 분야",   EN: "Construction", CN: "建设领域" },
+      name:     { KR: "중장비 굴착기 시리즈", EN: "Heavy Excavator Series", CN: "重型挖掘机系列" },
+      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "Heavy-duty hydraulic cylinders built for high pressure and extreme work environments.", CN: "适用于高压和极端工况的重载液压缸。" },
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_excavator_series_wfedqm.png"
     },
     {
       id: "automation", style: "t2",
-      category: { KR: "공정 자동화", EN: "", CN: "" },
-      name:     { KR: "오토메이션 로직", EN: "", CN: "" },
-      description: null
+      category: { KR: "공정 자동화", EN: "Process Automation", CN: "工艺自动化" },
+      name:     { KR: "오토메이션 로직", EN: "Automation Logic", CN: "自动化逻辑" },
+      description: null,
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_automation_logic_moiwr0.png"
     },
     {
       id: "marine", style: "t3",
-      category: { KR: "해양 / 플랜트", EN: "", CN: "" },
-      name:     { KR: "코로전 쉴드 내식 시리즈", EN: "", CN: "" },
-      description: null
+      category: { KR: "해양 / 플랜트", EN: "Marine / Plant", CN: "海洋 / 工厂" },
+      name:     { KR: "코로전 쉴드 내식 시리즈", EN: "Corrosion Shield Series", CN: "耐腐蚀防护系列" },
+      description: null,
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_corrosion_shield_u9d4jh.png"
     },
     {
       id: "smart-sensing", style: "t4",
-      category: { KR: "스마트 센싱", EN: "", CN: "" },
-      name:     { KR: "IoT 통합 파워 시스템", EN: "", CN: "" },
-      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "", CN: "" }
+      category: { KR: "스마트 센싱", EN: "Smart Sensing", CN: "智能传感" },
+      name:     { KR: "IoT 통합 파워 시스템", EN: "IoT Integrated Power System", CN: "IoT集成动力系统" },
+      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "Real-time remote diagnostics and predictive maintenance help maximize uptime.", CN: "通过实时远程诊断和预测性维护保障连续运行。" },
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_iot_pilot_system_kd8kcc.png"
     }
   ],
 
@@ -308,56 +313,58 @@ window.siteData = {
     /* ========== HOME ========== */
     home: {
       hero: {
-        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "", CN: "" },
-        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "", CN: "" },
+        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "Precision in Power,<br/>Perfection in Motion", CN: "动力之精密，<br/>运动之完美" },
+        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "A global leader in custom hydraulic solutions for heavy industry, offshore plants, and smart manufacturing ecosystems.", CN: "面向重工业、海洋工厂和智能制造生态系统的定制液压解决方案全球领导者。" },
         actions: [
-          { label: { KR: "제품 알아보기",  EN: "", CN: "" }, href: "products.html",   style: "btn-secondary" },
-          { label: { KR: "기술 사양 확인", EN: "", CN: "" }, href: "technology.html", style: "btn-outline-light" }
+          { label: { KR: "제품 알아보기",  EN: "Explore Products", CN: "了解产品" }, href: "products.html",   style: "btn-secondary" },
+          { label: { KR: "기술 사양 확인", EN: "View Technology", CN: "查看技术规格" }, href: "technology.html", style: "btn-outline-light" }
         ]
       },
       about: {
         eyebrow: "ABOUT HYDRAULIC PRECIS",
-        title:   { KR: "유체 동력 기술의 미래를 설계합니다", EN: "", CN: "" },
-        body:    { KR: "30년 이상의 제조 전문성을 바탕으로, Hydraulic Precis는 세계 유수의 기간 시설 프로젝트에 핵심이 되는 고성능 실린더를 공급합니다. ISO 인증 품질 관리와 혁신적인 스마트 센싱 기술이 업계 신뢰의 기준이 되고 있습니다.", EN: "", CN: "" },
+        title:   { KR: "유체 동력 기술의 미래를 설계합니다", EN: "Engineering the Future of Fluid Power", CN: "设计流体动力技术的未来" },
+        body:    { KR: "30년 이상의 제조 전문성을 바탕으로, Hydraulic Precis는 세계 유수의 기간 시설 프로젝트에 핵심이 되는 고성능 실린더를 공급합니다. ISO 인증 품질 관리와 혁신적인 스마트 센싱 기술이 업계 신뢰의 기준이 되고 있습니다.", EN: "With over 30 years of manufacturing expertise, Hydraulic Precis supplies high-performance cylinders for major infrastructure projects worldwide. ISO-certified quality control and smart sensing technologies set our standard of trust.", CN: "凭借30多年的制造经验，Hydraulic Precis 为全球重点基础设施项目供应高性能液压缸。ISO认证的质量管理与智能传感技术树立了行业信赖标准。" },
         stats: [
-          { value: "30+",  label: { KR: "업력 (년)",   EN: "", CN: "" } },
-          { value: "500+", label: { KR: "보유 특허",   EN: "", CN: "" } },
-          { value: "2K+",  label: { KR: "글로벌 고객", EN: "", CN: "" } }
-        ]
+          { value: "30+",  label: { KR: "업력 (년)",   EN: "Years", CN: "年经验" } },
+          { value: "500+", label: { KR: "보유 특허",   EN: "Patents", CN: "专利" } },
+          { value: "2K+",  label: { KR: "글로벌 고객", EN: "Global Clients", CN: "全球客户" } }
+        ],
+        imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/about_hydraulic_precis_ic3qpm.png"
       },
       productGallery: {
-        title:    { KR: "주요 제품군", EN: "", CN: "" },
-        subtitle: { KR: "산업별 요구사항에 최적화된 전문 엔지니어링 솔루션입니다.", EN: "", CN: "" }
+        title:    { KR: "주요 제품군", EN: "Key Product Lines", CN: "主要产品系列" },
+        subtitle: { KR: "산업별 요구사항에 최적화된 전문 엔지니어링 솔루션입니다.", EN: "Specialized engineering solutions optimized for industry-specific requirements.", CN: "针对各行业需求优化的专业工程解决方案。" }
       },
       coreTech: {
-        title:    { KR: "핵심 기술 역량", EN: "", CN: "" },
-        subtitle: { KR: "글로벌 산업 리더들이 미래 크리티컬 부품으로 Hydraulic Precis를 선택하는 이유입니다.", EN: "", CN: "" },
+        title:    { KR: "핵심 기술 역량", EN: "Core Technology Capabilities", CN: "核心技术能力" },
+        subtitle: { KR: "글로벌 산업 리더들이 미래 크리티컬 부품으로 Hydraulic Precis를 선택하는 이유입니다.", EN: "Why global industry leaders choose Hydraulic Precis for mission-critical components.", CN: "全球工业领导者选择 Hydraulic Precis 作为关键部件伙伴的原因。" },
         items: [
           {
             icon: "sun",
-            title: { KR: "무결점 품질 관리", EN: "", CN: "" },
-            description: { KR: "모든 실린더는 출고 전 압력 변형 다단계 테스트와 초음파 검사를 거칩니다.", EN: "", CN: "" }
+            title: { KR: "무결점 품질 관리", EN: "Zero-Defect Quality Control", CN: "零缺陷质量管理" },
+            description: { KR: "모든 실린더는 출고 전 압력 변형 다단계 테스트와 초음파 검사를 거칩니다.", EN: "Every cylinder undergoes multi-stage pressure deformation testing and ultrasonic inspection before shipment.", CN: "每支液压缸出厂前均经过多阶段压力变形测试和超声波检测。" }
           },
           {
             icon: "cube",
-            title: { KR: "맞춤형 엔지니어링", EN: "", CN: "" },
-            description: { KR: "사내 R&D 팀이 특수 어플리케이션을 위한 커스텀 스트로크, 보어 및 마운팅 구성을 설계합니다.", EN: "", CN: "" }
+            title: { KR: "맞춤형 엔지니어링", EN: "Custom Engineering", CN: "定制工程" },
+            description: { KR: "사내 R&D 팀이 특수 어플리케이션을 위한 커스텀 스트로크, 보어 및 마운팅 구성을 설계합니다.", EN: "Our in-house R&D team designs custom stroke, bore, and mounting configurations for special applications.", CN: "内部研发团队可为特殊应用设计定制行程、缸径和安装结构。" }
           },
           {
             icon: "clock",
-            title: { KR: "특수 표면 처리", EN: "", CN: "" },
-            description: { KR: "독자적인 표면 처리 기술로 해양 환경에서도 1000시간 이상의 염수 분무 내성을 보장합니다.", EN: "", CN: "" }
+            title: { KR: "특수 표면 처리", EN: "Special Surface Treatment", CN: "特殊表面处理" },
+            description: { KR: "독자적인 표면 처리 기술로 해양 환경에서도 1000시간 이상의 염수 분무 내성을 보장합니다.", EN: "Our proprietary surface treatment ensures over 1,000 hours of salt-spray resistance in marine environments.", CN: "专有表面处理技术可在海洋环境中提供超过1000小时的盐雾耐受性。" }
           },
           {
             icon: "bolt",
-            title: { KR: "신속한 납기 대응", EN: "", CN: "" },
-            description: { KR: "최적화된 린(Lean) 제조 프로세스로 시제품부터 양산까지 업계 최고의 리드 타임을 보장합니다.", EN: "", CN: "" }
+            title: { KR: "신속한 납기 대응", EN: "Rapid Delivery Response", CN: "快速交付响应" },
+            description: { KR: "최적화된 린(Lean) 제조 프로세스로 시제품부터 양산까지 업계 최고의 리드 타임을 보장합니다.", EN: "Optimized lean manufacturing delivers industry-leading lead times from prototype to mass production.", CN: "优化的精益制造流程确保从样机到量产的行业领先交期。" }
           }
         ]
       },
       location: {
-        title: { KR: "생산 거점 안내", EN: "", CN: "" },
-        body:  { KR: "대한민국 최고의 산업 클러스터에 위치한 본사 및 주요 생산 시설을 만나보십시오.", EN: "", CN: "" }
+        title: { KR: "생산 거점 안내", EN: "Production Site", CN: "生产基地" },
+        body:  { KR: "대한민국 최고의 산업 클러스터에 위치한 본사 및 주요 생산 시설을 만나보십시오.", EN: "Explore our headquarters and key production facilities located in Korea’s leading industrial cluster.", CN: "了解位于韩国领先产业集群的总部和主要生产设施。" },
+        mapLabel: { KR: "지도 보기", EN: "View map", CN: "查看地图" }
       }
     },
 

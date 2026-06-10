@@ -193,7 +193,11 @@
       return '<a href="' + esc(a.href) + '" class="btn ' + esc(a.style) + '">' + esc(t(a.label)) + '</a>';
     }).join('');
     fill('#home-hero', ''
-      + '<div class="hero-bg industrial-1"></div>'
+      + '<div class="hero-bg hero-video-bg">'
+      +   '<video class="hero-video" autoplay muted loop playsinline aria-hidden="true">'
+      +     '<source src="https://res.cloudinary.com/dw5ce5zsh/video/upload/v1780986434/sirinder_sum_ou0eaz.mp4" type="video/mp4">'
+      +   '</video>'
+      + '</div>'
       + '<div class="container">'
       +   '<h1>' + t(p.hero.title) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
@@ -214,7 +218,7 @@
       +       '<p>' + esc(t(p.about.body)) + '</p>'
       +       '<div class="stats">' + stats + '</div>'
       +     '</div>'
-      +     '<div class="about-visual"></div>'
+      +     '<div class="about-visual"><img src="' + esc(p.about.imageUrl) + '" alt="" loading="lazy" /></div>'
       +   '</div>'
       + '</div>'
     );
@@ -222,8 +226,10 @@
     // PRODUCT GALLERY (category tiles)
     var tiles = d.productCategories.map(function (c) {
       var desc = c.description ? '<p>' + esc(t(c.description)) + '</p>' : '';
+      var img = c.imageUrl ? '<img src="' + esc(c.imageUrl) + '" alt="" loading="lazy" />' : '';
       return ''
         + '<a href="products.html" class="product-tile ' + esc(c.style) + '">'
+        +   img
         +   '<div>'
         +     '<span class="tile-cat">' + esc(t(c.category)) + '</span>'
         +     '<h3>' + esc(t(c.name)) + '</h3>'
@@ -277,7 +283,10 @@
       +         '<div class="row">' + ICONS.mail + '<span>' + esc(d.company.email.sales) + '</span></div>'
       +       '</div>'
       +     '</div>'
-      +     '<div class="map-stub"><div class="map-pin"></div></div>'
+      +     '<a class="map-stub" href="' + esc(d.company.address.mapUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t(p.location.mapLabel)) + '">'
+      +       '<div class="map-pin"></div>'
+      +       '<span class="map-cta">' + esc(t(p.location.mapLabel)) + '</span>'
+      +     '</a>'
       +   '</div>'
       + '</div>'
     );

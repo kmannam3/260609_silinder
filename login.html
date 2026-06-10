@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>어드민 로그인 · HYDRAULIC PRECIS</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="login-bg">
+  <div class="login-card">
+
+    <div class="login-brand">
+      <div class="mark"><span class="dot"></span>HYDRAULIC PRECIS</div>
+    </div>
+
+    <h1>어드민 로그인</h1>
+    <p class="sub">관리자 계정으로 로그인하세요</p>
+
+    <form id="loginForm" autocomplete="off">
+      <div class="field">
+        <label for="email">이메일</label>
+        <input type="email" id="email" placeholder="admin@hp-precis.com" required />
+      </div>
+      <div class="field">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+      </div>
+
+      <div class="login-options">
+        <label class="checkbox-label">
+          <input type="checkbox" />
+          <span>로그인 유지</span>
+        </label>
+        <a href="#" class="forgot">비밀번호 찾기</a>
+      </div>
+
+      <button type="submit" class="login-btn">로그인</button>
+    </form>
+
+    <div class="login-footer">
+      © 2024 Precision Hydraulics Manufacturing Co., Ltd.
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // 실제 인증 없음 — 입력값 검증 없이 대시보드로 이동
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.location.href = 'dashboard.html';
+  });
+</script>
+
+</body>
+</html>

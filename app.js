@@ -283,7 +283,10 @@
       +         '<div class="row">' + ICONS.mail + '<span>' + esc(d.company.email.sales) + '</span></div>'
       +       '</div>'
       +     '</div>'
-      +     '<div class="map-stub"><div class="map-pin"></div></div>'
+      +     '<a class="map-stub" href="' + esc(d.company.address.mapUrl) + '" target="_blank" rel="noopener noreferrer" aria-label="' + esc(t(p.location.mapLabel)) + '">'
+      +       '<div class="map-pin"></div>'
+      +       '<span class="map-cta">' + esc(t(p.location.mapLabel)) + '</span>'
+      +     '</a>'
       +   '</div>'
       + '</div>'
     );

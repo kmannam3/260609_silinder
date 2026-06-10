@@ -864,6 +864,8 @@ input, textarea, select {
     linear-gradient(180deg, #e9eef5 0%, #dde4ed 100%);
   position: relative;
   overflow: hidden;
+  display: block;
+  color: inherit;
 }
 .map-stub::before {
   content: '';
@@ -896,6 +898,24 @@ input, textarea, select {
   border: 3px solid #ffffff;
   box-shadow: 0 2px 8px rgba(0, 89, 187, 0.4);
   z-index: 2;
+}
+.map-cta {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  padding: 9px 14px;
+  border-radius: var(--r-default);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 15, 34, 0.16);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.map-stub:hover .map-cta {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 15, 34, 0.22);
 }
 
 /* ==========================================================

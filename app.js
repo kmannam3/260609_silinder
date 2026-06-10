@@ -99,6 +99,7 @@
       var cls = n.id === activeId ? ' class="active"' : '';
       return '<a href="' + esc(n.href) + '"' + cls + '>' + esc(t(n.label)) + '</a>';
     }).join('');
+
     var langItems = d.meta.supportedLanguages.map(function (code, i) {
       var active = code === state.lang ? ' class="active"' : '';
       var sep = i < d.meta.supportedLanguages.length - 1 ? '<span class="sep">/</span>' : '';
@@ -109,7 +110,7 @@
       + '<div class="container">'
       +   '<a href="index.html" class="brand">' + esc(d.site.brand) + '</a>'
       +   '<nav class="nav">' + navItems + '</nav>'
-      +   '<div class="lang">' + ICONS.langGlobe + langItems + '<span class="sep">/</span><a href="login.html">Admin</a></div>'
+      +   '<div class="lang">' + ICONS.langGlobe + langItems + '</div>'
       +   '<button class="menu-toggle" aria-label="' + esc(t(d.i18n.menuLabel)) + '">' + ICONS.menu + '</button>'
       + '</div>'
     );

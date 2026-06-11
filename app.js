@@ -13,7 +13,23 @@
     lang: 'KR'                      // 현재 언어 (KR / EN / CN)
   };
 
+  var LANGUAGE_STORAGE_KEY = 'hp_lang';
+
   /* ---------- 2. HELPERS ---------- */
+
+  function normalizeLanguage(code) {
+    var upper = String(code || '').toUpperCase();
+    return upper === 'EN' || upper === 'CN' ? upper : 'KR';
+  }
+
+  function readStoredLanguage() {
+    if (!window.localStorage) return state.lang;
+    return normalizeLanguage(window.localStorage.getItem(LANGUAGE_STORAGE_KEY));
+  }
+
+  function storeLanguage(code) {
+    if (window.localStorage) window.localStorage.setItem(LANGUAGE_STORAGE_KEY, code.toLowerCase());
+  }
 
   /** 다국어 값(`{KR,EN,CN}`) 또는 일반 문자열을 받아 현재 언어 텍스트를 반환 */
   function t(v) {
@@ -110,10 +126,18 @@
       + '<div class="container">'
       +   '<a href="index.html" class="brand">' + esc(d.site.brand) + '</a>'
       +   '<nav class="nav">' + navItems + '</nav>'
-      +   '<div class="lang">' + ICONS.langGlobe + langItems + '</div>'
+      +   '<div class="lang">' + ICONS.langGlobe + langItems + '<span class="sep">/</span><a href="login.html">Admin</a></div>'
       +   '<button class="menu-toggle" aria-label="' + esc(t(d.i18n.menuLabel)) + '">' + ICONS.menu + '</button>'
       + '</div>'
     );
+
+    var langLinks = document.querySelectorAll('.lang a[data-lang]');
+    langLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.HP.setLanguage(link.getAttribute('data-lang'));
+      });
+    });
 
     // Mobile menu toggle
     var btn = document.querySelector('.menu-toggle');
@@ -786,6 +810,7 @@
       console.error('siteData not loaded. Make sure data.js is included before app.js.');
       return;
     }
+    state.lang = readStoredLanguage();
     renderHeader(pageId);
     var r = pageRenderers[pageId];
     if (r) r();
@@ -797,7 +822,8 @@
     boot: boot,
     t: t,
     setLanguage: function (code) {
-      state.lang = code;
+      state.lang = normalizeLanguage(code);
+      storeLanguage(state.lang);
       // re-render currently active page
       var activeNav = document.querySelector('.nav a.active');
       var id = 'home';

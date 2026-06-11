@@ -126,7 +126,7 @@
       + '<div class="container">'
       +   '<a href="index.html" class="brand">' + esc(d.site.brand) + '</a>'
       +   '<nav class="nav">' + navItems + '</nav>'
-      +   '<div class="lang">' + ICONS.langGlobe + langItems + '</div>'
+      +   '<div class="lang">' + ICONS.langGlobe + langItems + '<span class="sep">/</span><a href="login.html">Admin</a></div>'
       +   '<button class="menu-toggle" aria-label="' + esc(t(d.i18n.menuLabel)) + '">' + ICONS.menu + '</button>'
       + '</div>'
     );

@@ -313,21 +313,21 @@ window.siteData = {
     /* ========== HOME ========== */
     home: {
       hero: {
-        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "", CN: "" },
-        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "", CN: "" },
+        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "Precision in Power,<br/>Perfection in Motion", CN: "动力的精密，<br/>运动的完美" },
+        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "A global leader in custom hydraulic solutions for heavy industry, offshore plants, and smart manufacturing ecosystems.", CN: "面向重工业、海洋工程和智能制造生态系统的定制液压解决方案全球领导者。" },
         actions: [
-          { label: { KR: "제품 알아보기",  EN: "", CN: "" }, href: "products.html",   style: "btn-secondary" },
-          { label: { KR: "기술 사양 확인", EN: "", CN: "" }, href: "technology.html", style: "btn-outline-light" }
+          { label: { KR: "제품 알아보기",  EN: "Explore Products", CN: "了解产品" }, href: "products.html",   style: "btn-secondary" },
+          { label: { KR: "기술 사양 확인", EN: "View Technical Specs", CN: "查看技术规格" }, href: "technology.html", style: "btn-outline-light" }
         ]
       },
       about: {
-        eyebrow: "ABOUT HYDRAULIC PRECIS",
-        title:   { KR: "유체 동력 기술의 미래를 설계합니다", EN: "", CN: "" },
-        body:    { KR: "30년 이상의 제조 전문성을 바탕으로, Hydraulic Precis는 세계 유수의 기간 시설 프로젝트에 핵심이 되는 고성능 실린더를 공급합니다. ISO 인증 품질 관리와 혁신적인 스마트 센싱 기술이 업계 신뢰의 기준이 되고 있습니다.", EN: "", CN: "" },
+        eyebrow: { KR: "ABOUT HYDRAULIC PRECIS", EN: "ABOUT HYDRAULIC PRECIS", CN: "关于 HYDRAULIC PRECIS" },
+        title:   { KR: "유체 동력 기술의 미래를 설계합니다", EN: "Engineering the Future of Fluid Power", CN: "设计流体动力技术的未来" },
+        body:    { KR: "30년 이상의 제조 전문성을 바탕으로, Hydraulic Precis는 세계 유수의 기간 시설 프로젝트에 핵심이 되는 고성능 실린더를 공급합니다. ISO 인증 품질 관리와 혁신적인 스마트 센싱 기술이 업계 신뢰의 기준이 되고 있습니다.", EN: "With more than 30 years of manufacturing expertise, Hydraulic Precis supplies high-performance cylinders for major infrastructure projects around the world. ISO-certified quality management and innovative smart sensing technology set the benchmark for industry trust.", CN: "凭借 30 多年的制造专业经验，Hydraulic Precis 为全球主要基础设施项目供应高性能油缸。ISO 认证的质量管理和创新的智能传感技术树立了行业信赖标准。" },
         stats: [
-          { value: "30+",  label: { KR: "업력 (년)",   EN: "", CN: "" } },
-          { value: "500+", label: { KR: "보유 특허",   EN: "", CN: "" } },
-          { value: "2K+",  label: { KR: "글로벌 고객", EN: "", CN: "" } }
+          { value: "30+",  label: { KR: "업력 (년)",   EN: "Heritage (Years)", CN: "行业经验（年）" } },
+          { value: "500+", label: { KR: "보유 특허",   EN: "Patents Held", CN: "持有专利" } },
+          { value: "2K+",  label: { KR: "글로벌 고객", EN: "Global Clients", CN: "全球客户" } }
         ],
         imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/about_hydraulic_precis_ic3qpm.png"
       },

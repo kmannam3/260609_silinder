@@ -36,7 +36,8 @@
     if (v == null) return '';
     if (typeof v === 'string') return v;
     if (typeof v === 'object') {
-      return v[state.lang] || v.KR || v.EN || '';
+      var lang = normalizeLanguage(state.lang);
+      return v[lang] || v.KR || v.EN || '';
     }
     return String(v);
   }

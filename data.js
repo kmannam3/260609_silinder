@@ -313,11 +313,11 @@ window.siteData = {
     /* ========== HOME ========== */
     home: {
       hero: {
-        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "", CN: "" },
-        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "", CN: "" },
+        title:    { KR: "동력의 정밀함,<br/>움직임의 완벽함", EN: "Precision in Power,<br/>Perfection in Motion", CN: "动力的精密，<br/>运动的完美" },
+        subtitle: { KR: "중공업, 해양 플랜트 및 스마트 제조 생태계를 위한 맞춤형 유압 솔루션의 글로벌 리더입니다.", EN: "A global leader in custom hydraulic solutions for heavy industry, offshore plants, and smart manufacturing ecosystems.", CN: "面向重工业、海洋工程和智能制造生态系统的定制液压解决方案全球领导者。" },
         actions: [
-          { label: { KR: "제품 알아보기",  EN: "", CN: "" }, href: "products.html",   style: "btn-secondary" },
-          { label: { KR: "기술 사양 확인", EN: "", CN: "" }, href: "technology.html", style: "btn-outline-light" }
+          { label: { KR: "제품 알아보기",  EN: "Explore Products", CN: "了解产品" }, href: "products.html",   style: "btn-secondary" },
+          { label: { KR: "기술 사양 확인", EN: "View Technical Specs", CN: "查看技术规格" }, href: "technology.html", style: "btn-outline-light" }
         ]
       },
       about: {

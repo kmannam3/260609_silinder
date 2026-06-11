@@ -105,6 +105,7 @@
       var sep = i < d.meta.supportedLanguages.length - 1 ? '<span class="sep">/</span>' : '';
       return '<a href="#"' + active + ' data-lang="' + code + '">' + code + '</a>' + sep;
     }).join('');
+    langItems += '<span class="sep">/</span><a href="login.html" class="admin-link">Admin</a>';
 
     fill('#site-header', ''
       + '<div class="container">'

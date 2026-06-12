@@ -135,34 +135,34 @@ window.siteData = {
       id: "tie-rod",
       style: "shaft",          // 이미지 영역 클래스
       variant: "light",        // 카드 색상 변형 (light / dark)
-      chip: { KR: "표준 시리즈", EN: "", CN: "" },
-      name: { KR: "타이로드 실린더", EN: "", CN: "" },
+      chip: { KR: "표준 시리즈", EN: "Standard Series", CN: "标准系列" },
+      name: { KR: "타이로드 실린더", EN: "Tie-Rod Cylinder", CN: "拉杆式液压缸" },
       description: {
         KR: "NFPA 규격을 준수하는 설계로 유지보수가 용이하며, 산업 자동화 분야에서 높은 구조적 안정성을 제공합니다.",
-        EN: "", CN: ""
+        EN: "Designed to comply with NFPA standards for easy maintenance and high structural stability in industrial automation.", CN: "符合 NFPA 标准的设计，便于维护，并为工业自动化领域提供高结构稳定性。"
       },
       specs: [
-        { key: { KR: "보어 사이즈:", EN: "", CN: "" }, val: "1.5\" ~ 20\"", icon: "gear" },
-        { key: { KR: "최대 압력:",   EN: "", CN: "" }, val: { KR: "최대 3,000 PSI", EN: "", CN: "" }, icon: "clock" }
+        { key: { KR: "보어 사이즈:", EN: "Bore Size:", CN: "缸径尺寸：" }, val: "1.5\" ~ 20\"", icon: "gear" },
+        { key: { KR: "최대 압력:",   EN: "Max Pressure:", CN: "最大压力：" }, val: { KR: "최대 3,000 PSI", EN: "Up to 3,000 PSI", CN: "最高 3,000 PSI" }, icon: "clock" }
       ],
       tags: [
-        { KR: "일반 제조",   EN: "", CN: "" },
-        { KR: "자동화 공정", EN: "", CN: "" }
+        { KR: "일반 제조",   EN: "General Manufacturing", CN: "通用制造" },
+        { KR: "자동화 공정", EN: "Automated Processes", CN: "自动化工艺" }
       ]
     },
     {
       id: "welded",
       style: "welded",
       variant: "dark",
-      chip: { KR: "헤비 듀티", EN: "", CN: "" },
-      name: { KR: "용접식 실린더", EN: "", CN: "" },
+      chip: { KR: "헤비 듀티", EN: "Heavy Duty", CN: "重载型" },
+      name: { KR: "용접식 실린더", EN: "Welded Cylinder", CN: "焊接式液压缸" },
       description: {
         KR: "극한의 작업 환경과 장시간 사용을 요구하는 건설 기계 및 모바일 장비에 최적화된 컴팩트하고 견고한 설계입니다.",
-        EN: "", CN: ""
+        EN: "A compact, rugged design optimized for construction machinery and mobile equipment operating in extreme conditions for long duty cycles.", CN: "紧凑且坚固的设计，适用于需要在极端工况下长时间运行的工程机械和移动设备。"
       },
       footerAction: {
-        key:   { KR: "주요 적용 분야:",    EN: "", CN: "" },
-        value: { KR: "건설 및 광산 장비",  EN: "", CN: "" }
+        key:   { KR: "주요 적용 분야:",    EN: "Key Applications:", CN: "主要应用领域：" },
+        value: { KR: "건설 및 광산 장비",  EN: "Construction and Mining Equipment", CN: "建筑及矿山设备" }
       }
     },
     {
@@ -170,32 +170,32 @@ window.siteData = {
       style: "telescopic",
       variant: "light",
       chip: null,              // 칩 없는 카드
-      name: { KR: "텔레스코픽 실린더", EN: "", CN: "" },
+      name: { KR: "텔레스코픽 실린더", EN: "Telescopic Cylinder", CN: "伸缩式液压缸" },
       description: {
         KR: "제한된 공간에서 최대 스트로크를 구현하는 다단 확장 시스템. 덤프트럭 및 하역 장비에 최적입니다.",
-        EN: "", CN: ""
+        EN: "A multi-stage extension system that delivers maximum stroke in limited spaces, ideal for dump trucks and unloading equipment.", CN: "多级伸展系统，可在有限空间内实现最大行程，适用于自卸车和装卸设备。"
       },
       stats: [
-        { label: { KR: "확장 단계", EN: "", CN: "" }, value: { KR: "2 - 5단",    EN: "", CN: "" } },
-        { label: { KR: "허용 하중", EN: "", CN: "" }, value: { KR: "최대 50톤",  EN: "", CN: "" } }
+        { label: { KR: "확장 단계", EN: "Extension Stages", CN: "伸展级数" }, value: { KR: "2 - 5단",    EN: "2 - 5 Stages", CN: "2 - 5 级" } },
+        { label: { KR: "허용 하중", EN: "Load Capacity", CN: "允许载荷" }, value: { KR: "최대 50톤",  EN: "Up to 50 tons", CN: "最高 50 吨" } }
       ]
     },
     {
       id: "smart",
       style: "smart",
       variant: "smart-dark",
-      chip: { KR: "인더스트리 4.0", EN: "", CN: "" },
-      name: { KR: "스마트 실린더", EN: "", CN: "" },
+      chip: { KR: "인더스트리 4.0", EN: "Industry 4.0", CN: "工业 4.0" },
+      name: { KR: "스마트 실린더", EN: "Smart Cylinder", CN: "智能液压缸" },
       description: {
         KR: "리니어 트랜스듀서와 압력 센서가 통합되어 실시간 위치 피드백과 예지 보전 기능을 제공합니다.",
-        EN: "", CN: ""
+        EN: "Integrated linear transducers and pressure sensors provide real-time position feedback and predictive maintenance capabilities.", CN: "集成线性传感器和压力传感器，提供实时位置反馈和预测性维护功能。"
       },
       features: [
-        { KR: "IoT 및 PLC 통합 지원",  EN: "", CN: "" },
-        { KR: "±0.1mm 정밀 위치 피드백", EN: "", CN: "" },
-        { KR: "디지털 트윈 호환성 확보", EN: "", CN: "" }
+        { KR: "IoT 및 PLC 통합 지원",  EN: "IoT and PLC integration support", CN: "支持 IoT 与 PLC 集成" },
+        { KR: "±0.1mm 정밀 위치 피드백", EN: "±0.1 mm precision position feedback", CN: "±0.1mm 精密位置反馈" },
+        { KR: "디지털 트윈 호환성 확보", EN: "Digital twin compatibility", CN: "支持数字孪生兼容" }
       ],
-      cta: { label: { KR: "기술 데이터 요청", EN: "", CN: "" }, href: "contact.html" }
+      cta: { label: { KR: "기술 데이터 요청", EN: "Request Technical Data", CN: "申请技术资料" }, href: "contact.html" }
     }
   ],
 
@@ -370,38 +370,39 @@ window.siteData = {
 
     /* ========== PRODUCTS ========== */
     products: {
+      pageTitle: { KR: "제품소개 · HYDRAULIC PRECIS", EN: "Products · HYDRAULIC PRECIS", CN: "产品介绍 · HYDRAULIC PRECIS" },
       hero: {
-        title:    { KR: "정밀 엔지니어링.<br/>고성능 솔루션.", EN: "", CN: "" },
-        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "", CN: "" }
+        title:    { KR: "정밀 엔지니어링.<br/>고성능 솔루션.", EN: "Precision Engineering.<br/>High-Performance Solutions.", CN: "精密工程。<br/>高性能解决方案。" },
+        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "Explore our premium hydraulic cylinder lineup engineered for extreme durability and mission-critical reliability across industrial sites worldwide.", CN: "探索我们的高品质液压缸产品线，为全球工业现场提供极限耐久性和关键任务级可靠性。" }
       },
       catalogIntro: {
-        title: { KR: "유압 시스템 카탈로그", EN: "", CN: "" },
-        body:  { KR: "심해 탐사부터 중장비 건설 인프라까지, 당사의 컴포넌트는 가장 가혹한 환경에서도 완벽한 성능을 발휘하도록 설계되었습니다.", EN: "", CN: "" },
+        title: { KR: "유압 시스템 카탈로그", EN: "Hydraulic System Catalog", CN: "液压系统目录" },
+        body:  { KR: "심해 탐사부터 중장비 건설 인프라까지, 당사의 컴포넌트는 가장 가혹한 환경에서도 완벽한 성능을 발휘하도록 설계되었습니다.", EN: "From deep-sea exploration to heavy construction infrastructure, our components are engineered to perform flawlessly in the harshest environments.", CN: "从深海勘探到重型工程基础设施，我们的部件专为在最严苛环境中稳定发挥性能而设计。" },
         actions: [
-          { label: { KR: "카탈로그 다운로드", EN: "", CN: "" }, href: "#",            style: "btn-primary" },
-          { label: { KR: "기술 문의",         EN: "", CN: "" }, href: "contact.html", style: "btn-outline"  }
+          { label: { KR: "카탈로그 다운로드", EN: "Download Catalog", CN: "下载目录" }, href: "#",            style: "btn-primary" },
+          { label: { KR: "기술 문의",         EN: "Technical Inquiry", CN: "技术咨询" }, href: "contact.html", style: "btn-outline"  }
         ]
       },
       features: [
         {
           icon: "shield",
-          title: { KR: "ISO 9001:2015", EN: "", CN: "" },
-          description: { KR: "인증된 제조 공정과 철저한 품질 관리 시스템을 갖추고 있습니다.", EN: "", CN: "" }
+          title: { KR: "ISO 9001:2015", EN: "ISO 9001:2015", CN: "ISO 9001:2015" },
+          description: { KR: "인증된 제조 공정과 철저한 품질 관리 시스템을 갖추고 있습니다.", EN: "Certified manufacturing processes and a rigorous quality management system are in place.", CN: "具备认证制造流程和严格的质量管理体系。" }
         },
         {
           icon: "target",
-          title: { KR: "제로 톨러런스", EN: "", CN: "" },
-          description: { KR: "마이크론 단위의 정밀 가공으로 오차 없는 성능을 보장합니다.", EN: "", CN: "" }
+          title: { KR: "제로 톨러런스", EN: "Zero Tolerance", CN: "零公差" },
+          description: { KR: "마이크론 단위의 정밀 가공으로 오차 없는 성능을 보장합니다.", EN: "Micron-level precision machining ensures error-free performance.", CN: "微米级精密加工确保无误差性能。" }
         },
         {
           icon: "globe",
-          title: { KR: "글로벌 물류", EN: "", CN: "" },
-          description: { KR: "전 세계 주요 항만과 산업 허브로 신속한 배송을 지원합니다.", EN: "", CN: "" }
+          title: { KR: "글로벌 물류", EN: "Global Logistics", CN: "全球物流" },
+          description: { KR: "전 세계 주요 항만과 산업 허브로 신속한 배송을 지원합니다.", EN: "Fast delivery is supported to major ports and industrial hubs worldwide.", CN: "支持快速配送至全球主要港口和产业枢纽。" }
         },
         {
           icon: "support",
-          title: { KR: "24/7 전문가 지원", EN: "", CN: "" },
-          description: { KR: "복잡한 설치와 운용을 위한 상시 엔지니어링 상담 서비스를 제공합니다.", EN: "", CN: "" }
+          title: { KR: "24/7 전문가 지원", EN: "24/7 Expert Support", CN: "24/7 专家支持" },
+          description: { KR: "복잡한 설치와 운용을 위한 상시 엔지니어링 상담 서비스를 제공합니다.", EN: "Always-on engineering consulting is available for complex installation and operation needs.", CN: "为复杂安装和运行需求提供全天候工程咨询服务。" }
         }
       ]
     },

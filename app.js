@@ -321,6 +321,7 @@
   function renderProducts() {
     var d = window.siteData;
     var p = d.pages.products;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#products-hero', ''

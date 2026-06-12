@@ -135,6 +135,7 @@ window.siteData = {
       id: "tie-rod",
       style: "shaft",          // 이미지 영역 클래스
       variant: "light",        // 카드 색상 변형 (light / dark)
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781279203/product_tie_rod_cylinder_d4kjew.png",
       chip: { KR: "표준 시리즈", EN: "Standard Series", CN: "标准系列" },
       name: { KR: "타이로드 실린더", EN: "Tie-Rod Cylinder", CN: "拉杆式液压缸" },
       description: {
@@ -154,6 +155,7 @@ window.siteData = {
       id: "welded",
       style: "welded",
       variant: "dark",
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781279203/product_welded_cylinder_uarpvx.png",
       chip: { KR: "헤비 듀티", EN: "Heavy Duty", CN: "重载型" },
       name: { KR: "용접식 실린더", EN: "Welded Cylinder", CN: "焊接式液压缸" },
       description: {
@@ -169,6 +171,7 @@ window.siteData = {
       id: "telescopic",
       style: "telescopic",
       variant: "light",
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781279203/product_telescopic_cylinder_wynzcc.png",
       chip: null,              // 칩 없는 카드
       name: { KR: "텔레스코픽 실린더", EN: "Telescopic Cylinder", CN: "伸缩式液压缸" },
       description: {
@@ -184,6 +187,7 @@ window.siteData = {
       id: "smart",
       style: "smart",
       variant: "smart-dark",
+      imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781279203/product_smart_cylinder_jlsw37.png",
       chip: { KR: "인더스트리 4.0", EN: "Industry 4.0", CN: "工业 4.0" },
       name: { KR: "스마트 실린더", EN: "Smart Cylinder", CN: "智能液压缸" },
       description: {
@@ -373,7 +377,8 @@ window.siteData = {
       pageTitle: { KR: "제품소개 · HYDRAULIC PRECIS", EN: "Products · HYDRAULIC PRECIS", CN: "产品介绍 · HYDRAULIC PRECIS" },
       hero: {
         title:    { KR: "정밀 엔지니어링.<br/>고성능 솔루션.", EN: "Precision Engineering.<br/>High-Performance Solutions.", CN: "精密工程。<br/>高性能解决方案。" },
-        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "Explore our premium hydraulic cylinder lineup engineered for extreme durability and mission-critical reliability across industrial sites worldwide.", CN: "探索我们的高品质液压缸产品线，为全球工业现场提供极限耐久性和关键任务级可靠性。" }
+        subtitle: { KR: "전 세계 산업 현장에서 극한의 내구성과 미션 크리티컬한 신뢰성을 보장하는 고품질 유압 실린더 라인업을 확인하십시오.", EN: "Explore our premium hydraulic cylinder lineup engineered for extreme durability and mission-critical reliability across industrial sites worldwide.", CN: "探索我们的高品质液压缸产品线，为全球工业现场提供极限耐久性和关键任务级可靠性。" },
+        imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781279204/products_hero_hydraulic_precis_j5dk65.png"
       },
       catalogIntro: {
         title: { KR: "유압 시스템 카탈로그", EN: "Hydraulic System Catalog", CN: "液压系统目录" },

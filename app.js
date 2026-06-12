@@ -324,8 +324,12 @@
     if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
+    var heroImageStyle = p.hero.imageUrl
+      ? ' style="background-image: linear-gradient(135deg, rgba(0, 15, 34, 0.7) 0%, rgba(10, 37, 64, 0.5) 100%), url(\'' + esc(p.hero.imageUrl) + '\'); background-size: cover; background-position: center;"'
+      : '';
+
     fill('#products-hero', ''
-      + '<div class="hero-bg industrial-2"></div>'
+      + '<div class="hero-bg industrial-2"' + heroImageStyle + '></div>'
       + '<div class="container">'
       +   '<h1>' + t(p.hero.title) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
@@ -368,6 +372,8 @@
 
   function renderProductCard(pr) {
     var chipHtml = pr.chip ? '<span class="chip">' + esc(t(pr.chip)) + '</span>' : '';
+    var imageClass = 'pc-image ' + esc(pr.style) + (pr.imageUrl ? ' has-image' : '');
+    var imageStyle = pr.imageUrl ? ' style="background-image: url(\'' + esc(pr.imageUrl) + '\');"' : '';
     var cardClass = 'product-card';
     if (pr.variant === 'dark') cardClass += ' welded-card';
     if (pr.variant === 'smart-dark') cardClass += ' smart-card';
@@ -395,7 +401,7 @@
         +         ctaHtml
         +       '</div>'
         +     '</div>'
-        +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
+        +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
         +   '</div>'
         + '</div>';
     }
@@ -406,7 +412,7 @@
       return ''
         + '<div class="' + cardClass + '">'
         +   '<div class="pc-row">'
-        +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
+        +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
         +     '<div class="pc-content">'
         +       '<div>'
         +         chipHtml
@@ -457,7 +463,7 @@
     return ''
       + '<div class="' + cardClass + '">'
       +   '<div class="pc-row">'
-      +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
+      +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
       +     '<div class="pc-content">'
       +       '<div>'
       +         chipHtml

@@ -52,7 +52,7 @@ window.siteData = {
     fullName: "Precision Hydraulics Manufacturing Co., Ltd.",
     shortName: "HYDRAULIC PRECIS",
     address: {
-      short: { KR: "인천광역시 남동구 가산업단지", EN: "", CN: "" },
+      short: { KR: "인천광역시 남동구 가산업단지", EN: "Gasan Industrial Complex, Namdong-gu, Incheon", CN: "仁川广域市南洞区加山工业园区" },
       full:  { KR: "대한민국 인천광역시 남동국가산업단지 프레시스로 123", EN: "", CN: "" },
       mapUrl: "https://map.naver.com/p/search/%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%82%A8%EB%8F%99%EA%B5%AC%20%EA%B0%80%EC%82%B0%EC%97%85%EB%8B%A8%EC%A7%80"
     },
@@ -362,8 +362,8 @@ window.siteData = {
         ]
       },
       location: {
-        title: { KR: "생산 거점 안내", EN: "", CN: "" },
-        body:  { KR: "대한민국 최고의 산업 클러스터에 위치한 본사 및 주요 생산 시설을 만나보십시오.", EN: "", CN: "" },
+        title: { KR: "생산 거점 안내", EN: "Production Hub", CN: "生产基地指南" },
+        body:  { KR: "대한민국 최고의 산업 클러스터에 위치한 본사 및 주요 생산 시설을 만나보십시오.", EN: "Explore our headquarters and key production facilities located in one of Korea’s leading industrial clusters.", CN: "了解位于韩国领先产业集群内的总部及主要生产设施。" },
         mapLabel: { KR: "지도 보기", EN: "View map", CN: "查看地图" }
       }
     },

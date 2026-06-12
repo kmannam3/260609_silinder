@@ -203,30 +203,30 @@ window.siteData = {
   productCategories: [
     {
       id: "construction", style: "t1",
-      category: { KR: "건설 분야",   EN: "", CN: "" },
-      name:     { KR: "중장비 굴착기 시리즈", EN: "", CN: "" },
-      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "", CN: "" },
+      category: { KR: "건설 분야",   EN: "Construction", CN: "工程建设" },
+      name:     { KR: "중장비 굴착기 시리즈", EN: "Heavy Equipment Excavator Series", CN: "重型挖掘机系列" },
+      description: { KR: "고압 및 극한의 작업 환경을 견디는 헤비듀티 유압 실린더입니다.", EN: "Heavy-duty hydraulic cylinders built to withstand high pressure and extreme jobsite conditions.", CN: "可承受高压和极端工况的重载液压缸。" },
       imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_excavator_series_wfedqm.png"
     },
     {
       id: "automation", style: "t2",
-      category: { KR: "공정 자동화", EN: "", CN: "" },
-      name:     { KR: "오토메이션 로직", EN: "", CN: "" },
-      description: null,
+      category: { KR: "공정 자동화", EN: "Process Automation", CN: "流程自动化" },
+      name:     { KR: "오토메이션 로직", EN: "Automation Logic", CN: "自动化逻辑系统" },
+      description: { KR: "정밀 반복 제어와 안정적인 생산 흐름을 지원하는 자동화용 유압 솔루션입니다.", EN: "Automation-focused hydraulic solutions that support precise repeat control and stable production flow.", CN: "面向自动化的液压解决方案，支持精密重复控制和稳定生产流程。" },
       imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_automation_logic_moiwr0.png"
     },
     {
       id: "marine", style: "t3",
-      category: { KR: "해양 / 플랜트", EN: "", CN: "" },
-      name:     { KR: "코로전 쉴드 내식 시리즈", EN: "", CN: "" },
-      description: null,
+      category: { KR: "해양 / 플랜트", EN: "Marine / Plant", CN: "海洋 / 工厂" },
+      name:     { KR: "코로전 쉴드 내식 시리즈", EN: "Corrosion Shield Series", CN: "防腐蚀保护系列" },
+      description: { KR: "염분, 습도, 부식성 환경에서도 장기간 성능을 유지하는 내식 유압 실린더입니다.", EN: "Corrosion-resistant hydraulic cylinders engineered for long-term performance in salt, humidity, and harsh plant environments.", CN: "专为盐雾、潮湿及严苛工厂环境设计，可长期保持性能的耐腐蚀液压缸。" },
       imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/product_corrosion_shield_u9d4jh.png"
     },
     {
       id: "smart-sensing", style: "t4",
-      category: { KR: "스마트 센싱", EN: "", CN: "" },
-      name:     { KR: "IoT 통합 파워 시스템", EN: "", CN: "" },
-      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "", CN: "" },
+      category: { KR: "스마트 센싱", EN: "Smart Sensing", CN: "智能传感" },
+      name:     { KR: "IoT 통합 파워 시스템", EN: "IoT Integrated Power System", CN: "IoT 集成功率系统" },
+      description: { KR: "실시간 원격 진단 및 예지 보전을 통해 무중단 가동률을 보장합니다.", EN: "Real-time remote diagnostics and predictive maintenance help sustain uninterrupted uptime.", CN: "通过实时远程诊断和预测性维护，保障持续稳定运行。" },
       imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101222/product_iot_pilot_system_kd8kcc.png"
     }
   ],
@@ -332,8 +332,8 @@ window.siteData = {
         imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781101221/about_hydraulic_precis_ic3qpm.png"
       },
       productGallery: {
-        title:    { KR: "주요 제품군", EN: "", CN: "" },
-        subtitle: { KR: "산업별 요구사항에 최적화된 전문 엔지니어링 솔루션입니다.", EN: "", CN: "" }
+        title:    { KR: "주요 제품군", EN: "Featured Product Lines", CN: "主要产品系列" },
+        subtitle: { KR: "산업별 요구사항에 최적화된 전문 엔지니어링 솔루션입니다.", EN: "Specialized engineering solutions optimized for each industry’s requirements.", CN: "针对各行业需求优化的专业工程解决方案。" }
       },
       coreTech: {
         title:    { KR: "핵심 기술 역량", EN: "", CN: "" },

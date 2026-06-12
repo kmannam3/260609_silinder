@@ -474,12 +474,13 @@
   function renderTechnology() {
     var d = window.siteData;
     var p = d.pages.technology;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#tech-hero', ''
       + '<div class="hero-bg dark-flat"></div>'
       + '<div class="container">'
-      +   '<span class="hero-eyebrow">' + esc(p.hero.eyebrow) + '</span>'
+      +   '<span class="hero-eyebrow">' + esc(t(p.hero.eyebrow)) + '</span>'
       +   '<h1>' + esc(t(p.hero.title)) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
       + '</div>'
@@ -523,7 +524,7 @@
     fill('#tech-quality', ''
       + '<div class="container">'
       +   '<div class="section-heading">'
-      +     '<span class="eyebrow">' + esc(p.quality.eyebrow) + '</span>'
+      +     '<span class="eyebrow">' + esc(t(p.quality.eyebrow)) + '</span>'
       +     '<h2 style="margin-top: 8px;">' + esc(t(p.quality.title)) + '</h2>'
       +   '</div>'
       +   '<div class="qm-grid">' + qmCards + '</div>'
@@ -545,7 +546,7 @@
       + '<div class="container">'
       +   '<div class="innov-grid">'
       +     '<div class="innov-content">'
-      +       '<span class="eyebrow">' + esc(p.innovation.eyebrow) + '</span>'
+      +       '<span class="eyebrow">' + esc(t(p.innovation.eyebrow)) + '</span>'
       +       '<h2>' + esc(t(p.innovation.title)) + '</h2>'
       +       '<div class="innov-list">' + innItems + '</div>'
       +     '</div>'

@@ -409,125 +409,126 @@ window.siteData = {
 
     /* ========== TECHNOLOGY ========== */
     technology: {
+      pageTitle: { KR: "핵심기술 · HYDRAULIC PRECIS", EN: "Technology · HYDRAULIC PRECIS", CN: "核心技术 · HYDRAULIC PRECIS" },
       hero: {
-        eyebrow: "ENGINEERING EXCELLENCE",
-        title:    { KR: "유압 제어 기술의 미래를 선도하다", EN: "", CN: "" },
-        subtitle: { KR: "지능형 제조 공정과 엄격한 품질 관리 프로토콜을 통합하여 글로벌 산업 표준을 새롭게 정의합니다.", EN: "", CN: "" }
+        eyebrow: { KR: "ENGINEERING EXCELLENCE", EN: "ENGINEERING EXCELLENCE", CN: "工程卓越" },
+        title:    { KR: "유압 제어 기술의 미래를 선도하다", EN: "Leading the Future of Hydraulic Control Technology", CN: "引领液压控制技术的未来" },
+        subtitle: { KR: "지능형 제조 공정과 엄격한 품질 관리 프로토콜을 통합하여 글로벌 산업 표준을 새롭게 정의합니다.", EN: "We redefine global industrial standards by integrating intelligent manufacturing processes with rigorous quality-control protocols.", CN: "通过融合智能制造工艺与严格的质量管理流程，我们重新定义全球工业标准。" }
       },
       process: {
-        title:     { KR: "정밀 제조 공정", EN: "", CN: "" },
-        body:      { KR: "본사의 생산 시설은 자동화된 고정밀 용접 및 5축 CNC 가공 센터를 활용하여 모든 부품의 구조적 무결성과 마이크론 단위의 정밀 공차를 보장합니다.", EN: "", CN: "" },
+        title:     { KR: "정밀 제조 공정", EN: "Precision Manufacturing Process", CN: "精密制造工艺" },
+        body:      { KR: "본사의 생산 시설은 자동화된 고정밀 용접 및 5축 CNC 가공 센터를 활용하여 모든 부품의 구조적 무결성과 마이크론 단위의 정밀 공차를 보장합니다.", EN: "Our production facilities use automated high-precision welding and 5-axis CNC machining centers to ensure structural integrity and micron-level tolerances for every component.", CN: "我们的生产设施采用自动化高精度焊接和五轴 CNC 加工中心，确保每个部件的结构完整性和微米级精密公差。" },
         cards: [
           {
             id: "welding",
             imageStyle: "welding",
             iconName: "weld",
-            title:       { KR: "자동 오비탈 용접", EN: "", CN: "" },
-            description: { KR: "클린한 텅스텐 용접 프로토콜을 통해 최대 700bar의 극한 압력 사이클에서도 누설 제로 접합부를 보장합니다.", EN: "", CN: "" }
+            title:       { KR: "자동 오비탈 용접", EN: "Automated Orbital Welding", CN: "自动轨道焊接" },
+            description: { KR: "클린한 텅스텐 용접 프로토콜을 통해 최대 700bar의 극한 압력 사이클에서도 누설 제로 접합부를 보장합니다.", EN: "Clean tungsten welding protocols ensure leak-free joints even under extreme pressure cycles up to 700 bar.", CN: "洁净钨极焊接流程可在最高 700 bar 的极端压力循环下确保接头零泄漏。" }
           },
           {
             id: "cnc",
             imageStyle: "cnc",
             iconName: "cube",
-            title:       { KR: "다축 CNC 정밀 가공", EN: "", CN: "" },
-            description: { KR: "자동 공구 마모 보정 기능을 갖춘 복합 가공기를 통해 배치별 일관된 최상의 정밀도를 유지합니다.", EN: "", CN: "" }
+            title:       { KR: "다축 CNC 정밀 가공", EN: "Multi-Axis CNC Precision Machining", CN: "多轴 CNC 精密加工" },
+            description: { KR: "자동 공구 마모 보정 기능을 갖춘 복합 가공기를 통해 배치별 일관된 최상의 정밀도를 유지합니다.", EN: "Integrated machining centers with automatic tool-wear compensation maintain consistent best-in-class precision across every batch.", CN: "配备自动刀具磨损补偿的复合加工设备，可在每个批次中保持一致的高精度。" }
           }
         ]
       },
       quality: {
-        eyebrow: "TOTAL QUALITY MANAGEMENT",
-        title:   { KR: "무결점 품질 경영 (Zero-Defect)", EN: "", CN: "" },
+        eyebrow: { KR: "TOTAL QUALITY MANAGEMENT", EN: "TOTAL QUALITY MANAGEMENT", CN: "全面质量管理" },
+        title:   { KR: "무결점 품질 경영 (Zero-Defect)", EN: "Zero-Defect Quality Management", CN: "零缺陷质量管理" },
         items: [
           {
             id: "cmm",
             iconName: "clock",
-            title:       { KR: "CMM 정밀 측정", EN: "", CN: "" },
-            description: { KR: "항공우주급 3차원 측정기(CMM)를 통해 모든 부품을 마이크론 단위까지 정밀 검증합니다.", EN: "", CN: "" },
+            title:       { KR: "CMM 정밀 측정", EN: "CMM Precision Measurement", CN: "CMM 精密测量" },
+            description: { KR: "항공우주급 3차원 측정기(CMM)를 통해 모든 부품을 마이크론 단위까지 정밀 검증합니다.", EN: "Aerospace-grade coordinate measuring machines verify every component with micron-level precision.", CN: "航空航天级三坐标测量机对每个部件进行微米级精密验证。" },
             bullets: [
-              { KR: "3D 표면 매핑",      EN: "", CN: "" },
-              { KR: "형상 정합도 측정",  EN: "", CN: "" }
+              { KR: "3D 표면 매핑",      EN: "3D surface mapping", CN: "3D 表面映射" },
+              { KR: "형상 정합도 측정",  EN: "Geometric conformity measurement", CN: "几何符合度测量" }
             ]
           },
           {
             id: "endurance",
             iconName: "plus",
-            title:       { KR: "유압 내구 시험", EN: "", CN: "" },
-            description: { KR: "모든 실린더는 양품 압력의 1.5배까지 정적 및 동적 테스트를 100회 이상 실시합니다.", EN: "", CN: "" },
+            title:       { KR: "유압 내구 시험", EN: "Hydraulic Endurance Testing", CN: "液压耐久测试" },
+            description: { KR: "모든 실린더는 양품 압력의 1.5배까지 정적 및 동적 테스트를 100회 이상 실시합니다.", EN: "Every cylinder undergoes more than 100 static and dynamic tests at up to 1.5 times the qualified pressure.", CN: "每支液压缸均在合格压力 1.5 倍以内进行 100 次以上静态和动态测试。" },
             bullets: [
-              { KR: "유압 압력 사이클 테스트", EN: "", CN: "" },
-              { KR: "세부 데이터 로깅",       EN: "", CN: "" }
+              { KR: "유압 압력 사이클 테스트", EN: "Hydraulic pressure cycle testing", CN: "液压压力循环测试" },
+              { KR: "세부 데이터 로깅",       EN: "Detailed data logging", CN: "详细数据记录" }
             ]
           },
           {
             id: "tracking",
             iconName: "grid",
-            title:       { KR: "스마트 추적 시스템", EN: "", CN: "" },
-            description: { KR: "레이저 마킹 QR 코드를 통해 개별 유닛별로 전체 생애 주기 데이터와 보증 및 추적성을 확보합니다.", EN: "", CN: "" },
+            title:       { KR: "스마트 추적 시스템", EN: "Smart Traceability System", CN: "智能追溯系统" },
+            description: { KR: "레이저 마킹 QR 코드를 통해 개별 유닛별로 전체 생애 주기 데이터와 보증 및 추적성을 확보합니다.", EN: "Laser-marked QR codes secure full lifecycle data, warranty history, and traceability for each individual unit.", CN: "通过激光标刻二维码，为每个单元保留完整生命周期数据、保修信息和可追溯性。" },
             bullets: [
-              { KR: "소재 이력 관리",       EN: "", CN: "" },
-              { KR: "프로덕션 실행 체계",   EN: "", CN: "" }
+              { KR: "소재 이력 관리",       EN: "Material history management", CN: "材料履历管理" },
+              { KR: "프로덕션 실행 체계",   EN: "Production execution system", CN: "生产执行体系" }
             ]
           }
         ]
       },
       innovation: {
-        eyebrow: "INNOVATION HUB",
-        title:   { KR: "유체 지능 기술의 고도화", EN: "", CN: "" },
+        eyebrow: { KR: "INNOVATION HUB", EN: "INNOVATION HUB", CN: "创新中心" },
+        title:   { KR: "유체 지능 기술의 고도화", EN: "Advancing Fluid Intelligence Technology", CN: "推进流体智能技术" },
         callout: {
           number: "15%",
-          label: { KR: "유압 작동유의 에너지 효율 개선율", EN: "", CN: "" }
+          label: { KR: "유압 작동유의 에너지 효율 개선율", EN: "Energy-efficiency improvement in hydraulic fluid operation", CN: "液压油运行能效提升率" }
         },
         items: [
           {
             iconName: "eye",
-            title:       { KR: "CFD 전산 유체 역학 시뮬레이션", EN: "", CN: "" },
-            description: { KR: "포트 설계 최적화를 통해 난류를 억제하고 에너지 손실을 최소화하는 CFD 분석 기법을 적용합니다.", EN: "", CN: "" }
+            title:       { KR: "CFD 전산 유체 역학 시뮬레이션", EN: "CFD Computational Fluid Dynamics Simulation", CN: "CFD 计算流体动力学仿真" },
+            description: { KR: "포트 설계 최적화를 통해 난류를 억제하고 에너지 손실을 최소화하는 CFD 분석 기법을 적용합니다.", EN: "CFD analysis optimizes port design to suppress turbulence and minimize energy loss.", CN: "通过 CFD 分析优化油口设计，抑制湍流并最大限度降低能量损失。" }
           },
           {
             iconName: "cube",
-            title:       { KR: "스마트 실린더 R&D", EN: "", CN: "" },
-            description: { KR: "IoT 통합 센서를 개발하여 스트로크 위치, 압력, 예지 보전 알림을 실시간으로 제공합니다.", EN: "", CN: "" }
+            title:       { KR: "스마트 실린더 R&D", EN: "Smart Cylinder R&D", CN: "智能液压缸研发" },
+            description: { KR: "IoT 통합 센서를 개발하여 스트로크 위치, 압력, 예지 보전 알림을 실시간으로 제공합니다.", EN: "IoT-integrated sensors provide real-time stroke position, pressure, and predictive-maintenance alerts.", CN: "集成 IoT 的传感器可实时提供行程位置、压力和预测性维护提醒。" }
           },
           {
             iconName: "gear",
-            title:       { KR: "트라이볼로지(윤활공학) 연구", EN: "", CN: "" },
-            description: { KR: "씰(Seal) 수명 연장 및 마찰 계수 절감을 위한 첨단 코팅 및 소재 과학 연구를 지속하고 있습니다.", EN: "", CN: "" }
+            title:       { KR: "트라이볼로지(윤활공학) 연구", EN: "Tribology Research", CN: "摩擦学（润滑工程）研究" },
+            description: { KR: "씰(Seal) 수명 연장 및 마찰 계수 절감을 위한 첨단 코팅 및 소재 과학 연구를 지속하고 있습니다.", EN: "Advanced coatings and materials research continue to extend seal life and reduce friction coefficients.", CN: "持续开展先进涂层和材料科学研究，以延长密封件寿命并降低摩擦系数。" }
           }
         ]
       },
       matrix: {
-        title:    { KR: "기술 사양 매트릭스", EN: "", CN: "" },
-        subtitle: { KR: "표준 제조 역량 및 기술 한계치 수치", EN: "", CN: "" },
+        title:    { KR: "기술 사양 매트릭스", EN: "Technical Specification Matrix", CN: "技术规格矩阵" },
+        subtitle: { KR: "표준 제조 역량 및 기술 한계치 수치", EN: "Standard manufacturing capabilities and technical limit values", CN: "标准制造能力及技术极限数值" },
         headers: [
-          { KR: "항목",     EN: "", CN: "" },
-          { KR: "가공 범위", EN: "", CN: "" },
-          { KR: "정밀 공차", EN: "", CN: "" },
-          { KR: "적용 표준", EN: "", CN: "" }
+          { KR: "항목",     EN: "Item", CN: "项目" },
+          { KR: "가공 범위", EN: "Machining Range", CN: "加工范围" },
+          { KR: "정밀 공차", EN: "Precision Tolerance", CN: "精密公差" },
+          { KR: "적용 표준", EN: "Applicable Standard", CN: "适用标准" }
         ],
         rows: [
           {
-            item:      { KR: "실린더 내경 (Bore)",     EN: "", CN: "" },
-            range:     { KR: "40mm - 1200mm",           EN: "", CN: "" },
-            precision: { KR: "H8 - H9",                 EN: "", CN: "" },
-            standard:  { KR: "ISO 3320",                EN: "", CN: "" }
+            item:      { KR: "실린더 내경 (Bore)",     EN: "Cylinder Bore", CN: "液压缸内径" },
+            range:     { KR: "40mm - 1200mm",           EN: "40 mm - 1200 mm", CN: "40mm - 1200mm" },
+            precision: { KR: "H8 - H9",                 EN: "H8 - H9", CN: "H8 - H9" },
+            standard:  { KR: "ISO 3320",                EN: "ISO 3320", CN: "ISO 3320" }
           },
           {
-            item:      { KR: "최대 행정 (Stroke)",      EN: "", CN: "" },
-            range:     { KR: "최대 15,000mm",            EN: "", CN: "" },
-            precision: { KR: "±0.5mm / 1000mm",         EN: "", CN: "" },
-            standard:  { KR: "DIN 24333",               EN: "", CN: "" }
+            item:      { KR: "최대 행정 (Stroke)",      EN: "Maximum Stroke", CN: "最大行程" },
+            range:     { KR: "최대 15,000mm",            EN: "Up to 15,000 mm", CN: "最高 15,000mm" },
+            precision: { KR: "±0.5mm / 1000mm",         EN: "±0.5 mm / 1000 mm", CN: "±0.5mm / 1000mm" },
+            standard:  { KR: "DIN 24333",               EN: "DIN 24333", CN: "DIN 24333" }
           },
           {
-            item:      { KR: "상용 압력 (Working Pressure)", EN: "", CN: "" },
-            range:     { KR: "표준 250 · 맞춤형 700 bar", EN: "", CN: "" },
-            precision: { KR: "+5 bar",                   EN: "", CN: "" },
-            standard:  { KR: "ASME BPVC",                EN: "", CN: "" }
+            item:      { KR: "상용 압력 (Working Pressure)", EN: "Working Pressure", CN: "工作压力" },
+            range:     { KR: "표준 250 · 맞춤형 700 bar", EN: "Standard 250 · Custom 700 bar", CN: "标准 250 · 定制 700 bar" },
+            precision: { KR: "+5 bar",                   EN: "+5 bar", CN: "+5 bar" },
+            standard:  { KR: "ASME BPVC",                EN: "ASME BPVC", CN: "ASME BPVC" }
           },
           {
-            item:      { KR: "표면 거칠기 (Surface Finish)", EN: "", CN: "" },
-            range:     { KR: "Ra 0.1 - Ra 0.4 μm",        EN: "", CN: "" },
-            precision: { KR: "Max Ra 0.4",                EN: "", CN: "" },
-            standard:  { KR: "ISO 4287",                  EN: "", CN: "" }
+            item:      { KR: "표면 거칠기 (Surface Finish)", EN: "Surface Finish", CN: "表面粗糙度" },
+            range:     { KR: "Ra 0.1 - Ra 0.4 μm",        EN: "Ra 0.1 - Ra 0.4 μm", CN: "Ra 0.1 - Ra 0.4 μm" },
+            precision: { KR: "Max Ra 0.4",                EN: "Max Ra 0.4", CN: "最大 Ra 0.4" },
+            standard:  { KR: "ISO 4287",                  EN: "ISO 4287", CN: "ISO 4287" }
           }
         ]
       }

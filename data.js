@@ -239,21 +239,21 @@ window.siteData = {
     iso: [
       {
         id: "iso-9001",
-        title: { KR: "ISO 9001:2015", EN: "", CN: "" },
-        description: { KR: "철저한 프로세스 관리를 통해 일관된 제품 품질을 유지하고 고객 만족을 보장하는 품질 경영 시스템 인증입니다.", EN: "", CN: "" },
-        footer: { KR: "2026년까지 유효", EN: "", CN: "" }
+        title: { KR: "ISO 9001:2015", EN: "ISO 9001:2015", CN: "ISO 9001:2015" },
+        description: { KR: "철저한 프로세스 관리를 통해 일관된 제품 품질을 유지하고 고객 만족을 보장하는 품질 경영 시스템 인증입니다.", EN: "A quality management system certification that ensures consistent product quality and customer satisfaction through rigorous process control.", CN: "通过严格的流程管理确保产品质量一致性和客户满意度的质量管理体系认证。" },
+        footer: { KR: "2026년까지 유효", EN: "Valid until 2026", CN: "有效期至 2026 年" }
       },
       {
         id: "iso-3834-2",
-        title: { KR: "ISO 3834-2", EN: "", CN: "" },
-        description: { KR: "금속 재료의 용융 용접 품질 요구사항으로, 고압 유압 구조용 부품의 무결성을 보장하는 핵심 인증입니다.", EN: "", CN: "" },
-        footer: { KR: "용접 품질 우수성", EN: "", CN: "" }
+        title: { KR: "ISO 3834-2", EN: "ISO 3834-2", CN: "ISO 3834-2" },
+        description: { KR: "금속 재료의 용융 용접 품질 요구사항으로, 고압 유압 구조용 부품의 무결성을 보장하는 핵심 인증입니다.", EN: "A core certification for fusion welding quality requirements for metallic materials, ensuring integrity in high-pressure hydraulic structural components.", CN: "金属材料熔化焊质量要求的核心认证，确保高压液压结构部件的完整性。" },
+        footer: { KR: "용접 품질 우수성", EN: "Welding Quality Excellence", CN: "焊接质量卓越" }
       },
       {
         id: "iso-14001",
-        title: { KR: "ISO 14001", EN: "", CN: "" },
-        description: { KR: "지속 가능한 제조 환경 구축과 생태계 발자국 감소를 위한 노력을 검증하는 환경 경영 시스템 표준입니다.", EN: "", CN: "" },
-        footer: { KR: "친환경 공정 준수", EN: "", CN: "" }
+        title: { KR: "ISO 14001", EN: "ISO 14001", CN: "ISO 14001" },
+        description: { KR: "지속 가능한 제조 환경 구축과 생태계 발자국 감소를 위한 노력을 검증하는 환경 경영 시스템 표준입니다.", EN: "An environmental management system standard that verifies efforts to build sustainable manufacturing environments and reduce ecological footprint.", CN: "验证可持续制造环境建设和降低生态足迹相关努力的环境管理体系标准。" },
+        footer: { KR: "친환경 공정 준수", EN: "Eco-Friendly Process Compliance", CN: "环保工艺合规" }
       }
     ],
 
@@ -261,37 +261,37 @@ window.siteData = {
       {
         id: "ce",
         badge: "CE",
-        title: { KR: "CE 적합성 인증", EN: "", CN: "" },
-        description: { KR: "유럽 경제 지역(EEA)으로 수출되는 모든 유압 장치가 엄격한 보건, 안전 및 환경 보호 기준을 충족함을 보장합니다.", EN: "", CN: "" }
+        title: { KR: "CE 적합성 인증", EN: "CE Conformity Certification", CN: "CE 符合性认证" },
+        description: { KR: "유럽 경제 지역(EEA)으로 수출되는 모든 유압 장치가 엄격한 보건, 안전 및 환경 보호 기준을 충족함을 보장합니다.", EN: "Ensures all hydraulic devices exported to the European Economic Area meet strict health, safety, and environmental protection standards.", CN: "确保出口至欧洲经济区的所有液压设备符合严格的健康、安全和环境保护标准。" }
       },
       {
         id: "kcs",
         badge: "KCs",
-        title: { KR: "KCs 자율안전확인신고", EN: "", CN: "" },
-        description: { KR: "산업 현장에서 사용되는 기계 및 방호 장치의 구조적 결함이 없음을 증명하고 안전한 작동을 보장하는 한국 국가통합인증입니다.", EN: "", CN: "" }
+        title: { KR: "KCs 자율안전확인신고", EN: "KCs Self-Declaration Safety Confirmation", CN: "KCs 自主安全确认申报" },
+        description: { KR: "산업 현장에서 사용되는 기계 및 방호 장치의 구조적 결함이 없음을 증명하고 안전한 작동을 보장하는 한국 국가통합인증입니다.", EN: "A Korean national integrated certification proving industrial machinery and protective devices are free from structural defects and safe to operate.", CN: "韩国国家综合认证，证明工业现场使用的机械和防护装置无结构缺陷并可安全运行。" }
       }
     ],
 
     industry: [
       {
         id: "dnv",
-        title: { KR: "DNV 선급 인증",   EN: "", CN: "" },
-        description: { KR: "해양용 유압 실린더에 대한 형식 승인 획득.", EN: "", CN: "" }
+        title: { KR: "DNV 선급 인증",   EN: "DNV Classification Certification", CN: "DNV 船级认证" },
+        description: { KR: "해양용 유압 실린더에 대한 형식 승인 획득.", EN: "Type approval obtained for marine hydraulic cylinders.", CN: "已获得海洋用液压缸型式认可。" }
       },
       {
         id: "asme",
-        title: { KR: "ASME Section VIII", EN: "", CN: "" },
-        description: { KR: "압력용기 설계 및 제작 표준 준수.", EN: "", CN: "" }
+        title: { KR: "ASME Section VIII", EN: "ASME Section VIII", CN: "ASME Section VIII" },
+        description: { KR: "압력용기 설계 및 제작 표준 준수.", EN: "Complies with pressure vessel design and fabrication standards.", CN: "符合压力容器设计和制造标准。" }
       },
       {
         id: "atex",
-        title: { KR: "ATEX 방폭 지침",  EN: "", CN: "" },
-        description: { KR: "오일 및 가스 장비의 폭발 위험 환경 안전성.", EN: "", CN: "" }
+        title: { KR: "ATEX 방폭 지침",  EN: "ATEX Explosion-Proof Directive", CN: "ATEX 防爆指令" },
+        description: { KR: "오일 및 가스 장비의 폭발 위험 환경 안전성.", EN: "Safety compliance for oil and gas equipment in potentially explosive atmospheres.", CN: "确保油气设备在爆炸危险环境中的安全性。" }
       },
       {
         id: "jis",
-        title: { KR: "JIS 산업 표준",   EN: "", CN: "" },
-        description: { KR: "일본 공업 규격(JIS) 적합성 준수.", EN: "", CN: "" }
+        title: { KR: "JIS 산업 표준",   EN: "JIS Industrial Standard", CN: "JIS 工业标准" },
+        description: { KR: "일본 공업 규격(JIS) 적합성 준수.", EN: "Complies with Japanese Industrial Standards (JIS).", CN: "符合日本工业标准（JIS）。" }
       }
     ]
 
@@ -536,22 +536,23 @@ window.siteData = {
 
     /* ========== CERTIFICATIONS ========== */
     certifications: {
+      pageTitle: { KR: "인증현황 · HYDRAULIC PRECIS", EN: "Certifications · HYDRAULIC PRECIS", CN: "认证现况 · HYDRAULIC PRECIS" },
       hero: {
-        eyebrow:  { KR: "품질 경영에 대한 약속", EN: "", CN: "" },
-        title:    { KR: "글로벌 기준의 정밀 공학 우수성", EN: "", CN: "" },
-        subtitle: { KR: "우리의 제조 공정은 국제 공인 기관의 검증을 통해 모든 부품의 신뢰성과 안전성을 보장하며, 엄격한 엔지니어링 표준을 준수합니다.", EN: "", CN: "" }
+        eyebrow:  { KR: "품질 경영에 대한 약속", EN: "Commitment to Quality Management", CN: "质量管理承诺" },
+        title:    { KR: "글로벌 기준의 정밀 공학 우수성", EN: "Precision Engineering Excellence by Global Standards", CN: "符合全球标准的精密工程卓越性" },
+        subtitle: { KR: "우리의 제조 공정은 국제 공인 기관의 검증을 통해 모든 부품의 신뢰성과 안전성을 보장하며, 엄격한 엔지니어링 표준을 준수합니다.", EN: "Our manufacturing processes are verified by internationally accredited organizations to ensure reliability and safety for every component while meeting strict engineering standards.", CN: "我们的制造流程通过国际认可机构验证，确保每个部件的可靠性与安全性，并遵守严格的工程标准。" }
       },
       sections: {
-        iso:      { heading: { KR: "경영 시스템 인증",   EN: "", CN: "" }, sublabel: { KR: "ISO 표준",          EN: "", CN: "" } },
-        safety:   { heading: { KR: "안전 및 규제 준수",  EN: "", CN: "" }, sublabel: { KR: "글로벌 인증 마크",   EN: "", CN: "" } },
-        industry: { heading: { KR: "산업별 특화 승인",   EN: "", CN: "" }, sublabel: { KR: "특수 분야 전문 인증", EN: "", CN: "" } }
+        iso:      { heading: { KR: "경영 시스템 인증",   EN: "Management System Certifications", CN: "管理体系认证" }, sublabel: { KR: "ISO 표준",          EN: "ISO Standards", CN: "ISO 标准" } },
+        safety:   { heading: { KR: "안전 및 규제 준수",  EN: "Safety and Regulatory Compliance", CN: "安全与法规合规" }, sublabel: { KR: "글로벌 인증 마크",   EN: "Global Certification Marks", CN: "全球认证标志" } },
+        industry: { heading: { KR: "산업별 특화 승인",   EN: "Industry-Specific Approvals", CN: "行业专项认证" }, sublabel: { KR: "특수 분야 전문 인증", EN: "Specialized Field Certifications", CN: "特殊领域专业认证" } }
       },
       cta: {
-        title: { KR: "전체 인증 서류가 필요하십니까?", EN: "", CN: "" },
-        body:  { KR: "등록된 고객께서는 기술 데이터 시트, 시험 성적서 및 공식 인증서 사본이 포함된 데이터 센터를 이용하실 수 있습니다.", EN: "", CN: "" },
+        title: { KR: "전체 인증 서류가 필요하십니까?", EN: "Need the Complete Certification Documents?", CN: "需要完整认证文件吗？" },
+        body:  { KR: "등록된 고객께서는 기술 데이터 시트, 시험 성적서 및 공식 인증서 사본이 포함된 데이터 센터를 이용하실 수 있습니다.", EN: "Registered customers can access our data center, including technical data sheets, test reports, and official certificate copies.", CN: "注册客户可访问数据中心，其中包含技术数据表、测试报告和官方证书副本。" },
         actions: [
-          { label: { KR: "자료 요청하기",                EN: "", CN: "" }, href: "contact.html", style: "btn-primary" },
-          { label: { KR: "품질 매뉴얼 다운로드 (PDF)",   EN: "", CN: "" }, href: "#",            style: "btn-outline" }
+          { label: { KR: "자료 요청하기",                EN: "Request Documents", CN: "申请资料" }, href: "contact.html", style: "btn-primary" },
+          { label: { KR: "품질 매뉴얼 다운로드 (PDF)",   EN: "Download Quality Manual (PDF)", CN: "下载质量手册（PDF）" }, href: "#",            style: "btn-outline" }
         ]
       }
     },

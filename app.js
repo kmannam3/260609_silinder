@@ -591,6 +591,7 @@
     var d = window.siteData;
     var p = d.pages.certifications;
     var c = d.certifications;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#cert-hero', ''

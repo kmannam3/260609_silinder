@@ -321,6 +321,7 @@
   function renderProducts() {
     var d = window.siteData;
     var p = d.pages.products;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#products-hero', ''
@@ -473,12 +474,13 @@
   function renderTechnology() {
     var d = window.siteData;
     var p = d.pages.technology;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#tech-hero', ''
       + '<div class="hero-bg dark-flat"></div>'
       + '<div class="container">'
-      +   '<span class="hero-eyebrow">' + esc(p.hero.eyebrow) + '</span>'
+      +   '<span class="hero-eyebrow">' + esc(t(p.hero.eyebrow)) + '</span>'
       +   '<h1>' + esc(t(p.hero.title)) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
       + '</div>'
@@ -522,7 +524,7 @@
     fill('#tech-quality', ''
       + '<div class="container">'
       +   '<div class="section-heading">'
-      +     '<span class="eyebrow">' + esc(p.quality.eyebrow) + '</span>'
+      +     '<span class="eyebrow">' + esc(t(p.quality.eyebrow)) + '</span>'
       +     '<h2 style="margin-top: 8px;">' + esc(t(p.quality.title)) + '</h2>'
       +   '</div>'
       +   '<div class="qm-grid">' + qmCards + '</div>'
@@ -544,7 +546,7 @@
       + '<div class="container">'
       +   '<div class="innov-grid">'
       +     '<div class="innov-content">'
-      +       '<span class="eyebrow">' + esc(p.innovation.eyebrow) + '</span>'
+      +       '<span class="eyebrow">' + esc(t(p.innovation.eyebrow)) + '</span>'
       +       '<h2>' + esc(t(p.innovation.title)) + '</h2>'
       +       '<div class="innov-list">' + innItems + '</div>'
       +     '</div>'
@@ -589,6 +591,7 @@
     var d = window.siteData;
     var p = d.pages.certifications;
     var c = d.certifications;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
     fill('#cert-hero', ''
@@ -682,6 +685,7 @@
   function renderContact() {
     var d = window.siteData;
     var p = d.pages.contact;
+    if (p.pageTitle) document.title = t(p.pageTitle);
 
     // INTRO
     fill('#contact-intro', ''
@@ -725,7 +729,7 @@
     var hqRows = p.hqCard.rows.map(function (r) {
       var ico = ICONS[r.iconName] || '';
       var val = path(r.valueKey);
-      var valStr = (val && typeof val === 'object' && val.KR != null) ? t(val) : esc(val == null ? '' : val);
+      var valStr = (val && typeof val === 'object' && val.KR != null) ? esc(t(val)) : esc(val == null ? '' : val);
       return ''
         + '<div class="hq-row">'
         +   '<div class="icon">' + ico + '</div>'
@@ -745,6 +749,11 @@
       var ico = ICONS[tl.iconName] || '';
       return '<a class="contact-tile" href="' + esc(tl.href) + '">' + ico + esc(t(tl.label)) + '</a>';
     }).join('');
+
+    var mapZoom = p.mapZoom || {
+      zoomIn: { KR: '확대', EN: 'Zoom in', CN: '放大' },
+      zoomOut: { KR: '축소', EN: 'Zoom out', CN: '缩小' }
+    };
 
     fill('#contact-grid', ''
       + '<div class="container">'
@@ -781,8 +790,8 @@
       +       '</div>'
       +     '</div>'
       +     '<div class="map-zoom">'
-      +       '<button aria-label="확대">+</button>'
-      +       '<button aria-label="축소">−</button>'
+      +       '<button aria-label="' + esc(t(mapZoom.zoomIn)) + '">+</button>'
+      +       '<button aria-label="' + esc(t(mapZoom.zoomOut)) + '">−</button>'
       +     '</div>'
       +   '</div>'
       + '</div>'

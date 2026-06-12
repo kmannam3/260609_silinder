@@ -37,8 +37,8 @@ window.siteData = {
     brand: "HYDRAULIC PRECIS",
     tagline: {
       KR: "고성능 유압 솔루션과 무결점 시스템으로 산업의 표준을 정립합니다.",
-      EN: "",
-      CN: ""
+      EN: "Setting the industry standard with high-performance hydraulic solutions and zero-defect systems.",
+      CN: "以高性能液压解决方案和零缺陷系统树立行业标准。"
     },
     copyright: "© 2024 Precision Hydraulics Manufacturing Co., Ltd. All Rights Reserved.",
     social: [
@@ -86,29 +86,29 @@ window.siteData = {
   footer: {
     columns: [
       {
-        title: { KR: "주요 링크", EN: "", CN: "" },
+        title: { KR: "주요 링크", EN: "Quick Links", CN: "主要链接" },
         links: [
-          { label: { KR: "개인정보 처리방침", EN: "", CN: "" }, href: "#" },
-          { label: { KR: "이용 약관",         EN: "", CN: "" }, href: "#" },
-          { label: { KR: "환경 경영 방침",    EN: "", CN: "" }, href: "#" },
-          { label: { KR: "사이트맵",          EN: "", CN: "" }, href: "#" }
+          { label: { KR: "개인정보 처리방침", EN: "Privacy Policy", CN: "隐私政策" }, href: "#" },
+          { label: { KR: "이용 약관",         EN: "Terms of Use", CN: "使用条款" }, href: "#" },
+          { label: { KR: "환경 경영 방침",    EN: "Environmental Policy", CN: "环境管理方针" }, href: "#" },
+          { label: { KR: "사이트맵",          EN: "Sitemap", CN: "网站地图" }, href: "#" }
         ]
       },
       {
-        title: { KR: "자료실", EN: "", CN: "" },
+        title: { KR: "자료실", EN: "Resources", CN: "资料室" },
         links: [
-          { label: { KR: "품질 보증 안내",    EN: "", CN: "" }, href: "#" },
-          { label: { KR: "구축 사례 (Case Studies)", EN: "", CN: "" }, href: "products.html" },
-          { label: { KR: "파트너 프로그램",   EN: "", CN: "" }, href: "#" },
-          { label: { KR: "기술 문서 센터",    EN: "", CN: "" }, href: "#" }
+          { label: { KR: "품질 보증 안내",    EN: "Quality Assurance Guide", CN: "质量保证指南" }, href: "#" },
+          { label: { KR: "구축 사례 (Case Studies)", EN: "Case Studies", CN: "案例研究" }, href: "products.html" },
+          { label: { KR: "파트너 프로그램",   EN: "Partner Program", CN: "合作伙伴计划" }, href: "#" },
+          { label: { KR: "기술 문서 센터",    EN: "Technical Document Center", CN: "技术文档中心" }, href: "#" }
         ]
       }
     ],
     newsletter: {
-      title:       { KR: "뉴스레터 구독", EN: "", CN: "" },
-      description: { KR: "최신 기술 백서 소식을 가장 먼저 받아보세요.", EN: "", CN: "" },
-      placeholder: { KR: "이메일 주소", EN: "", CN: "" },
-      successMessage: { KR: "구독 신청이 접수되었습니다.", EN: "", CN: "" }
+      title:       { KR: "뉴스레터 구독", EN: "Subscribe to Newsletter", CN: "订阅新闻通讯" },
+      description: { KR: "최신 기술 백서 소식을 가장 먼저 받아보세요.", EN: "Get the latest technical white paper updates first.", CN: "第一时间获取最新技术白皮书资讯。" },
+      placeholder: { KR: "이메일 주소", EN: "Email address", CN: "电子邮箱地址" },
+      successMessage: { KR: "구독 신청이 접수되었습니다.", EN: "Your subscription request has been received.", CN: "您的订阅申请已收到。" }
     }
   },
 

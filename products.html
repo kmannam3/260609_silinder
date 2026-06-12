@@ -925,6 +925,12 @@ input, textarea, select {
   background:
     radial-gradient(ellipse at center, #0c3a6e 0%, #061a35 70%, #020c1e 100%);
 }
+.product-card .pc-image.has-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-card .pc-image.has-image::after { display: none; }
 .product-card .pc-image::after {
   /* Hint of cylinder shape */
   content: '';

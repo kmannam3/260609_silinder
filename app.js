@@ -324,12 +324,8 @@
     if (p.pageTitle) document.title = t(p.pageTitle);
 
     // HERO
-    var heroImageStyle = p.hero.imageUrl
-      ? ' style="background-image: linear-gradient(135deg, rgba(0, 15, 34, 0.7) 0%, rgba(10, 37, 64, 0.5) 100%), url(\'' + esc(p.hero.imageUrl) + '\'); background-size: cover; background-position: center;"'
-      : '';
-
     fill('#products-hero', ''
-      + '<div class="hero-bg industrial-2"' + heroImageStyle + '></div>'
+      + '<div class="hero-bg industrial-2"></div>'
       + '<div class="container">'
       +   '<h1>' + t(p.hero.title) + '</h1>'
       +   '<p>' + esc(t(p.hero.subtitle)) + '</p>'
@@ -372,8 +368,6 @@
 
   function renderProductCard(pr) {
     var chipHtml = pr.chip ? '<span class="chip">' + esc(t(pr.chip)) + '</span>' : '';
-    var imageClass = 'pc-image ' + esc(pr.style) + (pr.imageUrl ? ' has-image' : '');
-    var imageStyle = pr.imageUrl ? ' style="background-image: url(\'' + esc(pr.imageUrl) + '\');"' : '';
     var cardClass = 'product-card';
     if (pr.variant === 'dark') cardClass += ' welded-card';
     if (pr.variant === 'smart-dark') cardClass += ' smart-card';
@@ -401,7 +395,7 @@
         +         ctaHtml
         +       '</div>'
         +     '</div>'
-        +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
+        +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
         +   '</div>'
         + '</div>';
     }
@@ -412,7 +406,7 @@
       return ''
         + '<div class="' + cardClass + '">'
         +   '<div class="pc-row">'
-        +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
+        +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
         +     '<div class="pc-content">'
         +       '<div>'
         +         chipHtml
@@ -463,7 +457,7 @@
     return ''
       + '<div class="' + cardClass + '">'
       +   '<div class="pc-row">'
-      +     '<div class="' + imageClass + '"' + imageStyle + '></div>'
+      +     '<div class="pc-image ' + esc(pr.style) + '"></div>'
       +     '<div class="pc-content">'
       +       '<div>'
       +         chipHtml
@@ -494,9 +488,11 @@
 
     // PROCESS
     var procCards = p.process.cards.map(function (c) {
+      var imageClass = 'process-img ' + esc(c.imageStyle) + (c.imageUrl ? ' has-image' : '');
+      var imageStyle = c.imageUrl ? ' style="background-image: url(\'' + esc(c.imageUrl) + '\');"' : '';
       return ''
         + '<div class="process-card">'
-        +   '<div class="process-img ' + esc(c.imageStyle) + '"></div>'
+        +   '<div class="' + imageClass + '"' + imageStyle + '></div>'
         +   '<div class="process-content">'
         +     '<div class="icon">' + icon(c.iconName) + '</div>'
         +     '<div>'
@@ -556,7 +552,7 @@
       +       '<h2>' + esc(t(p.innovation.title)) + '</h2>'
       +       '<div class="innov-list">' + innItems + '</div>'
       +     '</div>'
-      +     '<div class="innov-visual">'
+      +     '<div class="innov-visual' + (p.innovation.imageUrl ? ' has-image' : '') + '"' + (p.innovation.imageUrl ? ' style="background-image: url(\'' + esc(p.innovation.imageUrl) + '\');"' : '') + '>'
       +       '<div class="callout-15">'
       +         '<div class="num">' + esc(p.innovation.callout.number) + '</div>'
       +         '<div class="lbl">' + esc(t(p.innovation.callout.label)) + '</div>'

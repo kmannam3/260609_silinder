@@ -336,28 +336,28 @@ window.siteData = {
         subtitle: { KR: "산업별 요구사항에 최적화된 전문 엔지니어링 솔루션입니다.", EN: "Specialized engineering solutions optimized for each industry’s requirements.", CN: "针对各行业需求优化的专业工程解决方案。" }
       },
       coreTech: {
-        title:    { KR: "핵심 기술 역량", EN: "", CN: "" },
-        subtitle: { KR: "글로벌 산업 리더들이 미래 크리티컬 부품으로 Hydraulic Precis를 선택하는 이유입니다.", EN: "", CN: "" },
+        title:    { KR: "핵심 기술 역량", EN: "Core Technology Capabilities", CN: "核心技术能力" },
+        subtitle: { KR: "글로벌 산업 리더들이 미래 크리티컬 부품으로 Hydraulic Precis를 선택하는 이유입니다.", EN: "Why global industry leaders choose Hydraulic Precis for future-critical components.", CN: "全球行业领导者选择 Hydraulic Precis 作为未来关键部件合作伙伴的原因。" },
         items: [
           {
             icon: "sun",
-            title: { KR: "무결점 품질 관리", EN: "", CN: "" },
-            description: { KR: "모든 실린더는 출고 전 압력 변형 다단계 테스트와 초음파 검사를 거칩니다.", EN: "", CN: "" }
+            title: { KR: "무결점 품질 관리", EN: "Zero-Defect Quality Control", CN: "零缺陷质量管理" },
+            description: { KR: "모든 실린더는 출고 전 압력 변형 다단계 테스트와 초음파 검사를 거칩니다.", EN: "Every cylinder undergoes multi-stage pressure deformation testing and ultrasonic inspection before shipment.", CN: "每支液压缸在出厂前均经过多阶段压力变形测试和超声波检测。" }
           },
           {
             icon: "cube",
-            title: { KR: "맞춤형 엔지니어링", EN: "", CN: "" },
-            description: { KR: "사내 R&D 팀이 특수 어플리케이션을 위한 커스텀 스트로크, 보어 및 마운팅 구성을 설계합니다.", EN: "", CN: "" }
+            title: { KR: "맞춤형 엔지니어링", EN: "Custom Engineering", CN: "定制化工程设计" },
+            description: { KR: "사내 R&D 팀이 특수 어플리케이션을 위한 커스텀 스트로크, 보어 및 마운팅 구성을 설계합니다.", EN: "Our in-house R&D team designs custom strokes, bores, and mounting configurations for specialized applications.", CN: "内部研发团队可针对特殊应用设计定制行程、缸径和安装结构。" }
           },
           {
             icon: "clock",
-            title: { KR: "특수 표면 처리", EN: "", CN: "" },
-            description: { KR: "독자적인 표면 처리 기술로 해양 환경에서도 1000시간 이상의 염수 분무 내성을 보장합니다.", EN: "", CN: "" }
+            title: { KR: "특수 표면 처리", EN: "Specialized Surface Treatment", CN: "特殊表面处理" },
+            description: { KR: "독자적인 표면 처리 기술로 해양 환경에서도 1000시간 이상의 염수 분무 내성을 보장합니다.", EN: "Proprietary surface treatment technology delivers more than 1,000 hours of salt-spray resistance in marine environments.", CN: "专有表面处理技术可在海洋环境中提供超过 1000 小时的盐雾耐受能力。" }
           },
           {
             icon: "bolt",
-            title: { KR: "신속한 납기 대응", EN: "", CN: "" },
-            description: { KR: "최적화된 린(Lean) 제조 프로세스로 시제품부터 양산까지 업계 최고의 리드 타임을 보장합니다.", EN: "", CN: "" }
+            title: { KR: "신속한 납기 대응", EN: "Rapid Delivery Response", CN: "快速交付响应" },
+            description: { KR: "최적화된 린(Lean) 제조 프로세스로 시제품부터 양산까지 업계 최고의 리드 타임을 보장합니다.", EN: "Optimized lean manufacturing processes ensure industry-leading lead times from prototype to mass production.", CN: "优化的精益制造流程确保从样品到量产均具备行业领先的交付周期。" }
           }
         ]
       },

@@ -422,6 +422,7 @@ window.siteData = {
           {
             id: "welding",
             imageStyle: "welding",
+            imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781280497/tech_auto_welding_cell_w6qncm.png",
             iconName: "weld",
             title:       { KR: "자동 오비탈 용접", EN: "Automated Orbital Welding", CN: "自动轨道焊接" },
             description: { KR: "클린한 텅스텐 용접 프로토콜을 통해 최대 700bar의 극한 압력 사이클에서도 누설 제로 접합부를 보장합니다.", EN: "Clean tungsten welding protocols ensure leak-free joints even under extreme pressure cycles up to 700 bar.", CN: "洁净钨极焊接流程可在最高 700 bar 的极端压力循环下确保接头零泄漏。" }
@@ -429,6 +430,7 @@ window.siteData = {
           {
             id: "cnc",
             imageStyle: "cnc",
+            imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781280496/tech_multi_axis_cnc.png_efap0c.png",
             iconName: "cube",
             title:       { KR: "다축 CNC 정밀 가공", EN: "Multi-Axis CNC Precision Machining", CN: "多轴 CNC 精密加工" },
             description: { KR: "자동 공구 마모 보정 기능을 갖춘 복합 가공기를 통해 배치별 일관된 최상의 정밀도를 유지합니다.", EN: "Integrated machining centers with automatic tool-wear compensation maintain consistent best-in-class precision across every batch.", CN: "配备自动刀具磨损补偿的复合加工设备，可在每个批次中保持一致的高精度。" }
@@ -474,6 +476,7 @@ window.siteData = {
       innovation: {
         eyebrow: { KR: "INNOVATION HUB", EN: "INNOVATION HUB", CN: "创新中心" },
         title:   { KR: "유체 지능 기술의 고도화", EN: "Advancing Fluid Intelligence Technology", CN: "推进流体智能技术" },
+        imageUrl: "https://res.cloudinary.com/dw5ce5zsh/image/upload/v1781280497/tech_fluid_intelligence_rnd_b03ntv.png",
         callout: {
           number: "15%",
           label: { KR: "유압 작동유의 에너지 효율 개선율", EN: "Energy-efficiency improvement in hydraulic fluid operation", CN: "液压油运行能效提升率" }

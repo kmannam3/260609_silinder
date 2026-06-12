@@ -488,9 +488,11 @@
 
     // PROCESS
     var procCards = p.process.cards.map(function (c) {
+      var imageClass = 'process-img ' + esc(c.imageStyle) + (c.imageUrl ? ' has-image' : '');
+      var imageStyle = c.imageUrl ? ' style="background-image: url(\'' + esc(c.imageUrl) + '\');"' : '';
       return ''
         + '<div class="process-card">'
-        +   '<div class="process-img ' + esc(c.imageStyle) + '"></div>'
+        +   '<div class="' + imageClass + '"' + imageStyle + '></div>'
         +   '<div class="process-content">'
         +     '<div class="icon">' + icon(c.iconName) + '</div>'
         +     '<div>'
@@ -550,7 +552,7 @@
       +       '<h2>' + esc(t(p.innovation.title)) + '</h2>'
       +       '<div class="innov-list">' + innItems + '</div>'
       +     '</div>'
-      +     '<div class="innov-visual">'
+      +     '<div class="innov-visual' + (p.innovation.imageUrl ? ' has-image' : '') + '"' + (p.innovation.imageUrl ? ' style="background-image: url(\'' + esc(p.innovation.imageUrl) + '\');"' : '') + '>'
       +       '<div class="callout-15">'
       +         '<div class="num">' + esc(p.innovation.callout.number) + '</div>'
       +         '<div class="lbl">' + esc(t(p.innovation.callout.label)) + '</div>'

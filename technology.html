@@ -1121,6 +1121,11 @@ input, textarea, select {
   background:
     radial-gradient(circle at 50% 50%, #6c8aa8 0%, #344f6c 50%, #15263c 100%);
 }
+.process-img.has-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .process-content {
   padding: 24px 28px;
   display: flex;
@@ -1285,6 +1290,13 @@ input, textarea, select {
     linear-gradient(90deg, rgba(116, 119, 126, 0.08) 1px, transparent 1px);
   background-size: 36px 36px;
 }
+.innov-visual.has-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.innov-visual.has-image::before,
+.innov-visual.has-image::after { display: none; }
 .callout-15 {
   position: absolute;
   bottom: 24px;

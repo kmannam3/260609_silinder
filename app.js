@@ -36,7 +36,8 @@
     if (v == null) return '';
     if (typeof v === 'string') return v;
     if (typeof v === 'object') {
-      return v[state.lang] || v.KR || v.EN || '';
+      var lang = normalizeLanguage(state.lang);
+      return v[lang] || v.KR || v.EN || '';
     }
     return String(v);
   }
@@ -237,7 +238,7 @@
       + '<div class="container">'
       +   '<div class="about-grid">'
       +     '<div class="about-content">'
-      +       '<span class="eyebrow">' + esc(p.about.eyebrow) + '</span>'
+      +       '<span class="eyebrow">' + esc(t(p.about.eyebrow)) + '</span>'
       +       '<h2>' + esc(t(p.about.title)) + '</h2>'
       +       '<p>' + esc(t(p.about.body)) + '</p>'
       +       '<div class="stats">' + stats + '</div>'
